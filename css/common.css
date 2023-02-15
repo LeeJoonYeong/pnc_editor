@@ -1,0 +1,633 @@
+@charset 'utf-8';
+
+@import url(./intro.css);
+@import url(./main.css);
+@import url(./run.css);
+@import url(../fonts/font.css);
+
+* {
+    box-sizing: border-box;
+}
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+button,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0
+}
+
+dl,
+li,
+menu,
+ol,
+ul {
+    list-style: none
+}
+
+ul {
+    display: flow-root;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+  width: 100%;
+}
+
+input[data-popup="input-text"] {
+    height: 28px;
+    border-radius: 1px;
+    border: 1px solid #5f5f5f;
+    background-color: #171a1c;
+    color: #fff;
+    font-size: 12px;
+    padding: 0 10px;
+    font-family: 'Noto Sans CJK KR Regular';
+}
+
+input[data-popup="input-text"]:hover {
+    border-color: #787878;
+}
+
+input[data-popup="input-text"]:focus {
+    border: 0;
+    outline: 1px solid #619be3;
+}
+
+input[data-popup="input-text"]:disabled {
+    color: #6e6e6e;
+    border-color: #3a3a3a;
+    background-color: #202224;
+}
+
+input[data-popup="input-text"]:read-only {
+    color: #c8c8c8;
+    border-color: #3a3a3a;
+    background-color: #202224;
+}
+
+input[data-input="text-step1"].success {
+    border-color: #33af1a;
+    outline-color: #33af1a;
+}
+
+input[data-input="text-step1"].error {
+    border-color: #d93c3c;
+    outline-color: #d93c3c;
+}
+
+input[data-input="text-step1"] + .ico-inspection {
+    display: none;
+    width: 12px;
+    height: 12px;
+    background: url(../images/general-ic-input-text-error.png) no-repeat;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+input[data-input="text-step1"] + .ico-inspection.success {
+    display: block;
+    background-image: url(../images/general-ic-input-text-success.png);
+}
+
+input[data-input="text-step1"] + .ico-inspection.error {
+    display: block;
+    background-image: url(../images/general-ic-input-text-error.png);
+}
+
+input[data-input="text-step1"] + .ico-inspection + .text-alert {
+    display: none;
+    font-size: 12px;
+    color: #c8c8c8;
+    position: absolute;
+    top: 34px;
+    left: 119px;
+    font-family: 'Noto Sans CJK KR Regular';
+}
+
+input[data-input="text-step1"] + .ico-inspection + .text-alert.active {
+    display: block;
+}
+
+input[data-run="text"] {
+    width: 100%;
+    min-width: 576px;
+    height: 100%;
+    background-color: #17181a;
+    border: 0;
+    outline: 0;
+    color: #ddd;
+    font-size: 12px;
+    padding: 0 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Source Code Pro', monospace;
+}
+
+input[field="radio"] {
+    width: 15px;
+    height: 15px;
+    margin: 3px 0 0;
+}
+
+input[field="radio"]:checked + .text {
+    color: #fff;
+}
+
+select[data-popup="select"] {
+    width: 100%;
+    height: 28px;
+    border-radius: 1px;
+    border: 1px solid #5f5f5f;
+    color: #fff;
+    font-size: 12px;
+    padding: 0 10px;
+    appearance: none;
+    background: url(../images/general-btn-dropdown-unfold-normal.png) no-repeat right 3px center;
+    background-color: #202326;
+    font-family: 'Noto Sans CJK KR Regular';
+}
+
+select[data-popup="select"]:focus {
+    outline: 0;
+}
+
+select[data-popup="select"]:disabled {
+    border-color: #3a3a3a;
+    color: #6e6e6e;
+}
+
+span[title="run"] {
+    display: block;
+    float: left;
+    height: 100%;
+    line-height: 30px;
+    font-size: 12px;
+    color: #fff;
+    font-family: 'Noto Sans CJK KR Medium';
+}
+
+span[data-run="number"] {
+    display: block;
+    width: 29px;
+    height: 100%;
+    font-size: 12px;
+    line-height: 1.58;
+    color: #858585;
+    text-align: right;
+    position: absolute;
+    top: 3px;
+    left: -50px;
+    font-family: 'Noto Sans CJK KR Regular';
+}
+
+div[data-run="tooltip"] {
+    display: none;
+    /*width: 48px;*/
+    height: 25px;
+    background-color: #4d4f54;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 2px;
+    padding: 4px 10px;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 130%;
+    left: -35%;
+    font-family: 'Noto Sans CJK KR Regular';
+}
+
+div[data-run="tooltip"]:hover {
+    display: none;
+}
+
+div[data-run="tooltip"]::after {
+    content: ' ';
+    border: 6px solid white;
+    position: absolute;
+    border-color: transparent transparent #4d4f54 transparent;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+div[data-run="directory"] {
+    width: 100%;
+    position: relative;
+}
+
+p[data-run="folder"] {
+    width: 100%;
+    height: 24px;
+    padding: 0 14px;
+    display: flex;
+    align-items: center;
+}
+
+p[data-run="folder"]:hover {
+    background-color: #3f434a;
+}
+
+p[data-run="folder"]:hover .add-ico {
+    visibility: visible;
+}
+
+span[data-run="btn-arrow"] {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url(../images/btn-run-fold.png) no-repeat;
+    cursor: pointer;
+}
+
+span[data-run="btn-arrow"].active {
+    background-image: url(../images/btn-run-unfold.png);
+}
+
+span[data-run="btn-arrow"].active + .ico {
+    background-image: url(../images/ic-run-tree-folder-open-normal.png);
+}
+
+span[data-run="ico"] {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url(../images/ic-run-tree-folder-close-normal.png) no-repeat;
+    margin-right: 5px;
+}
+
+span[data-run="text"] {
+    display: block;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    color: #ddd;
+    font-family: 'Noto Sans CJK KR Regular';
+}
+
+span[data-run="add-ico"] {
+    visibility: hidden;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../images/btn-run-tree-add-normal.png) no-repeat;
+    position: absolute;
+    right: 6px;
+    cursor: pointer;
+}
+
+span[data-run="add-ico"]:hover {
+    background-image: url(../images/btn-run-tree-add-hover.png);
+}
+
+p[data-run="folder"] + .list {
+    display: none;
+    position: relative;
+}
+
+p[data-run="folder"] + .list.active {
+    display: flow-root;
+}
+
+p[data-run="folder"] + .list li {
+    width: 100%;
+    height: 24px;
+    padding-left: 44px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+p[data-run="folder"] + .list li.selected {
+    background-color: #3f434a;
+}
+
+p[data-run="folder"] + .list li:hover {
+    background-color: #3f434a;
+}
+
+p[data-run="folder"] + .list li:hover .run-ico,
+p[data-run="folder"] + .list li:hover .rename-ico,
+p[data-run="folder"] + .list li:hover .delete-ico {
+    visibility: visible;
+}
+
+p[data-run="folder"] + .list li .file-ico {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url(../images/ic-run-tree-file-normal.png) no-repeat;
+    margin-right: 5px;
+}
+
+p[data-run="folder"] + .list li .text {
+    display: block;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    color: #ddd;
+    cursor: pointer;
+    font-family: 'Noto Sans CJK KR Regular';
+}
+
+p[data-run="folder"] + .list li .run-ico,
+p[data-run="folder"] + .list li .rename-ico,
+p[data-run="folder"] + .list li .delete-ico {
+    visibility: hidden;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../images/btn-run-tree-run-normal.png) no-repeat;
+    position: absolute;
+    right: 6px;
+    cursor: pointer;
+}
+
+p[data-run="folder"] + .list li .rename-ico {
+    background-image: url(../images/btn-run-tree-rename-normal.png);
+    right: 30px;
+}
+
+p[data-run="folder"] + .list li .delete-ico {
+    background-image: url(../images/btn-run-tree-delete-normal.png);
+    right: 54px;
+}
+
+p[data-run="folder"] + .list li .run-ico:hover {
+    background-image: url(../images/btn-run-tree-run-hover.png);
+}
+
+p[data-run="folder"] + .list li .rename-ico:hover {
+    background-image: url(../images/btn-run-tree-rename-hover.png);
+}
+
+p[data-run="folder"] + .list li .delete-ico:hover {
+    background-image: url(../images/btn-run-tree-delete-hover.png);
+}
+
+p[data-run="folder"] + .list li .rename {
+    visibility: hidden;
+    outline: 0;
+    border: 1px solid #666;
+    background: #3f434a;
+    width: 132px;
+    height: 22px;
+    position: absolute;
+    left: 64px;
+    font-size: 12px;
+    color: #ddd;
+    padding: 0 4px;
+}
+
+p[data-run="folder"] + .list li .rename.failed {
+    border-color: #d93c3c;
+}
+
+p[data-run="folder"] + .list li .tooltip {
+    display: none;
+    left: 43%;
+    transform: translateX(-50%);
+    z-index: 1;
+    height: 25px;
+    background-color: #4d4f54;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 2px;
+    padding: 4px 10px;
+    box-shadow: 2px 2px 4px 0 rgb(0 0 0 / 25%);
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 130%;
+    font-family: 'Noto Sans CJK KR Regular';
+}
+
+p[data-run="folder"] + .list li .tooltip.active {
+    display: flex;
+}
+
+*[data-popup="awning"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    opacity: .4;
+}
+
+*[data-popup="box-wrap"] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+*[data-popup="nav"] {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px 5px 0 0;
+    background-color: #2f3237;
+    position: relative;
+}
+
+*[data-popup="nav-title"] {
+    display: block;
+    width: 140px;
+    font-size: 14px;
+    color: #e6e6e6;
+    position: absolute;
+    top: 50%;
+    left: 24px;
+    transform: translateY(-50%);
+    font-family: 'Noto Sans CJK KR Bold';
+}
+
+*[data-popup="ico-close"] {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../images/btn-popup-close.png) no-repeat;
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}    
+
+*[data-popup="main"] {
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+    background-color: #202326;
+    position: relative;
+} 
+
+*[data-popup="btn-delete"],
+*[data-popup="btn-next"],
+*[data-popup="btn-finish"],
+*[data-popup="btn-ok"],
+*[data-popup="btn-get"] {
+    float: left;
+    margin-left: 8px;
+    width: 60px;
+    height: 25px;
+    border-radius: 2px;
+    border: 0;
+    font-size: 12px;
+    color: #fff;
+    background-color: #619be3;
+    font-family: 'Noto Sans CJK KR Regular';
+    cursor: pointer;
+} 
+
+*[data-popup="btn-delete"]:hover,
+*[data-popup="btn-next"]:hover,
+*[data-popup="btn-finish"]:hover,
+*[data-popup="btn-ok"]:hover,
+*[data-popup="btn-get"]:hover {
+    background-color: #3d82d8;
+} 
+
+*[data-popup="btn-next"] {
+    width: 66px;
+    padding-left: 10px;
+}
+
+*[data-popup="btn-next"]:disabled,
+*[data-popup="btn-finish"]:disabled {
+    color: #9dadc0;
+    background-color: #3c5b82;
+    cursor: initial;
+}
+
+*[data-popup="btn-cancel"],
+*[data-popup="btn-previous"] {
+    float: left;
+    margin-left: 8px;
+    width: 60px;
+    height: 25px;
+    border-radius: 2px;
+    border: 1px solid #5c5d60;
+    font-size: 12px;
+    color: #fff;
+    background-color: inherit;
+    font-family: 'Noto Sans CJK KR Regular';
+    cursor: pointer;
+}
+
+*[data-popup="btn-cancel"]:hover,
+*[data-popup="btn-previous"]:hover {
+    background-color: #5c5d60;
+}
+
+*[data-popup="btn-previous"] {
+    width: 82px;
+} 
+
+*[data-border="run-main-section"] {
+    width: 1px;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+span.label-text {
+    font-size: 12px;
+    color: #ddd;
+    font-family: 'Noto Sans CJK KR Medium';
+}
+
+span.label-text > span{
+    font-size: 10px;
+}

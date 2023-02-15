@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ko" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="../javascripts/main.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body id="body">
+    <nav class="nav-wrap">
+        <div class="logo-box">
+            <img src="../images/general-logo.png" alt="pnc_logo">
+        </div>
+        <div class="net-condition"></div>
+        <div class="net-text">
+            <p class="text">The server has been contacted</p>
+        </div>
+        <div class="bg-mode-box">
+            <span class="lever"></span>
+            <span class="text">DARK</span>
+        </div>
+        <div class="lang-box">
+            <ul>
+                <li>한국어</li>
+                <li class="active">English</li>
+                <li>中文</li>
+            </ul>
+        </div>
+    </nav>
+    <main class="mn-main-wrap">
+        <section class="bg-left"></section>
+        <section class="bg-right"></section>
+        <section class="category-wrap">
+            <div class="project">
+                <p class="title">Project Quick Start</p>
+                <ul>
+                    <li>
+                        <lottie-player src="../pnc_json/create.json" background="transparent"  speed="1" loop hover class="lottie"></lottie-player> 
+                        <span class="info">Create</span>
+                    </li>
+                    <li>
+                        <lottie-player src="../pnc_json/import.json" background="transparent"  speed="1" loop hover></lottie-player> 
+                        <span class="info">Import</span>
+                    </li>
+                    <li>
+                        <lottie-player src="../pnc_json/export.json" background="transparent"  speed="1" loop hover></lottie-player> 
+                        <span class="info">Export</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="maintenance">
+                <p class="title">Maintenance</p>
+                <ul>
+                    <li>
+                        <lottie-player src="../pnc_json/self_diagnosis.json" background="transparent"  speed="1" loop hover></lottie-player> 
+                        <span class="info">Self-Diagnosis</span>
+                    </li>
+                    <li>
+                        <lottie-player src="../pnc_json/system_updates.json" background="transparent"  speed="1" loop hover></lottie-player> 
+                        <span class="info">Update</span>
+                    </li>
+                    <li>
+                        <lottie-player src="../pnc_json/factory_reset.json" background="transparent"  speed="1" loop hover></lottie-player> 
+                        <span class="info">factory Reset</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="Learning">
+                <p class="title">Learning Center</p>
+                <ul>
+                    <li>
+                        <lottie-player src="../pnc_json/tutorials.json" background="transparent"  speed="1" loop hover></lottie-player> 
+                        <span class="info">Tutorials</span>
+                    </li>
+                    <li>
+                        <lottie-player src="../pnc_json/videos.json" background="transparent"  speed="1" loop hover></lottie-player> 
+                        <span class="info">Videos</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="info-wrap">
+            <div class="proj-box">
+                <p class="title">Project List</p>
+                <div class="filter">
+                    <span class="date active">Date</span>
+                    <span class="name">Name</span>
+                </div>
+                <ul class="list">
+                    <li>
+                        <span class="date">2020/04/09 11:35:27</span>
+                        <span class="f-ico"></span>
+                        <span class="name">PNC_Alpha_Test_01_bravo...</span>
+                        <span class="d-ico"></span>
+                    </li>
+                    <li>
+                        <span class="date">2020/04/09 11:35:24</span>
+                        <span class="f-ico"></span>
+                        <span class="name">PNC_Alpha_Test_01_alpha</span>
+                        <span class="d-ico"></span>
+                    </li>
+                    <li>
+                        <span class="date">2020/04/09 11:35:25</span>
+                        <span class="f-ico"></span>
+                        <span class="name">PNC_Alpha_Test_01_charlie</span>
+                        <span class="d-ico"></span>
+                    </li>
+                    <li>
+                        <span class="date">2020/04/09 11:35:12</span>
+                        <span class="f-ico"></span>
+                        <span class="name">PNC_Alpha_Test_01_delta</span>
+                        <span class="d-ico"></span>
+                    </li>
+                    <li>
+                        <span class="date">2020/04/09 11:35:14</span>
+                        <span class="f-ico"></span>
+                        <span class="name">PNC_Alpha_Test_01_echo</span>
+                        <span class="d-ico"></span>
+                    </li>
+                    <li>
+                        <span class="date">2020/04/09 11:33:07</span>
+                        <span class="f-ico"></span>
+                        <span class="name">PNC_Alpha_Test_01_foxtrot</span>
+                        <span class="d-ico"></span>
+                    </li>
+                    <li>
+                        <span class="date">2020/04/09 11:33:06</span>
+                        <span class="f-ico"></span>
+                        <span class="name">PNC_Alpha_Test_01_golf</span>
+                        <span class="d-ico"></span>
+                    </li>
+                    <li>
+                        <span class="date">2020/04/09 11:33:06</span>
+                        <span class="f-ico"></span>
+                        <span class="name">PNC_Alpha_Test_01_hotel</span>
+                        <span class="d-ico"></span>
+                    </li>
+                    <li>
+                        <span class="date">2020/04/09 11:32:06</span>
+                        <span class="f-ico"></span>
+                        <span class="name">PNC_Alpha_Test_01_iron</span>
+                        <span class="d-ico"></span>
+                    </li>
+                    <li>
+                        <span class="date">2020/04/09 11:33:06</span>
+                        <span class="f-ico"></span>
+                        <span class="name">PNC_Alpha_Test_01_iron</span>
+                        <span class="d-ico"></span>
+                    </li>
+                    <li>
+                        <span class="date">2020/04/09 11:31:06</span>
+                        <span class="f-ico"></span>
+                        <span class="name">PNC_Alpha_Test_01_iron</span>
+                        <span class="d-ico"></span>
+                    </li>
+                    <li>
+                        <span class="date">2020/04/09 11:33:06</span>
+                        <span class="f-ico"></span>
+                        <span class="name">PNC_Alpha_Test_01_iron</span>
+                        <span class="d-ico"></span>
+                    </li>
+                    <li>
+                        <span class="date">2020/04/09 11:33:06</span>
+                        <span class="f-ico"></span>
+                        <span class="name">PNC_Alpha_Test_01_iron</span>
+                        <span class="d-ico"></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="event-box">
+                <div class="title-box">
+                    <p class="title">News & Events</p>
+                    <span class="more-ico"></span>
+                </div>
+                <ul class="list">
+                    <li>
+                        <span class="subject">[News] Lorem ipsum dolor sit ament.</span>
+                        <span class="date">2020/06/26</span>
+                    </li>
+                    <li>
+                        <span class="subject">[Events] Lorem ipsum dolor sit ament.</span>
+                        <span class="date">2020/06/26</span>
+                    </li>
+                </ul>
+                <div class="ad">
+                    <img src="../images/main-ad.png" alt="main ad">
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="popup-create-project">
+        <div class="awning" data-popup="awning"></div>
+        <div class="create-box" data-popup="box-wrap">
+            <section class="nav" data-popup="nav">
+                <span class="title" data-popup="nav-title">Create Project</span>
+                <span class="cancel-ico" data-popup="ico-close"></span>
+            </section>
+            <section class="main">
+                <form action="../html/run.html" class="create-form">
+                    <div id="step1">
+                        <p class="title">Project Setting</p>
+                        <p class="subTitle">Please enter project name and manager, select display standards.<br>
+                            Click the Finish button if you want to use the default, or the Next button if you want additional settings.
+                        </p>
+                        <p class="proj-name">
+                            <label for="proj-name">Project Name</label>
+                            <input type="text" id="proj-name" name="project-name" data-popup="input-text" data-input="text-step1" autocomplete="off">
+                            <span class="ico-inspection"></span>
+                            <span class="text-alert">Only alphabets, numbers and some special characters (_, -, +, (, ), [, ], .) are allowed.</span>
+                        </p>
+                        <p class="proj-manager">
+                            <label for="proj-manager">Project Manager</label>
+                            <input type="text" id="proj-manager" name="project-manager" data-popup="input-text" data-input="text-step1" autocomplete="off">
+                            <span class="ico-inspection"></span>
+                            <span class="text-alert">Only alphabets, numbers and some special characters (_, -, +, (, ), [, ], .) are allowed.</span>
+                        </p>
+                        <p class="proj-standards">
+                            <label for="">Project Standards</label>
+                            <label for="MIPI">
+                                <input type="radio" id="MIPI" name="DP-mode" value="MIPI" field="radio" checked>
+                                <span class="MIPI-text">MIPI</span>
+                                <span class="MIPI-img"></span>
+                            </label>
+                            <label for="DP">
+                                <input type="radio" id="DP" name="DP-mode" value="DP" field="radio">
+                                <span class="DP-text">DP / eDP / Special DP</span>
+                                <span class="DP-img"></span>
+                            </label>
+                        </p>
+                    </div>
+                    <div id="step2-MIPI">
+                        <div class="video-option">
+                            <span class="title">Video Timing</span>
+                            <label for="HACT" class="HACT-wrap">
+                                <span class="text">HACT</span>
+                                <input type="text" name="HACT" id="HACT" value="1080" data-popup="input-text">
+                            </label>
+                            <label for="VACT" class="VACT-wrap">
+                                <span class="text">VACT</span>
+                                <input type="text" name="VACT" id="VACT" value="1920" data-popup="input-text">
+                            </label>
+                            <label for="FPS" class="FPS-wrap">
+                                <span class="text">FPS</span>
+                                <input type="text" name="FPS" id="FPS" value="120" data-popup="input-text">
+                            </label>
+                            <label for="VBP" class="VBP-wrap">
+                                <span class="text">VBP</span>
+                                <input type="text" name="VBP" id="VBP" value="20" data-popup="input-text">
+                            </label>
+                            <label for="VFP" class="VFP-wrap">
+                                <span class="text">VFP</span>
+                                <input type="text" name="VFP" id="VFP" value="20" data-popup="input-text">
+                            </label>
+                            <label for="HBP" class="HBP-wrap">
+                                <span class="text">HBP</span>
+                                <input type="text" name="HBP" id="HBP" value="20" data-popup="input-text">
+                            </label>
+                            <label for="HFP" class="HFP-wrap">
+                                <span class="text">HFP</span>
+                                <input type="text" name="HFP" id="HFP" value="20" data-popup="input-text">
+                            </label>
+                            <label for="VSA" class="VSA-wrap">
+                                <span class="text">VSA</span>
+                                <input type="text" name="VSA" id="VSA" value="4" data-popup="input-text">
+                            </label>
+                            <label for="HSA" class="HSA-wrap">
+                                <span class="text">FPS</span>
+                                <input type="text" name="HSA" id="HSA" value="32" data-popup="input-text">
+                            </label>
+                        </div>
+                        <div class="MIPI-option">
+                            <span class="title">MIPI</span>
+                            <label for="Lane" class="Lane-wrap">
+                                <input type="text" name="Lane" id="Lane" value="4" data-popup="input-text">
+                                <span class="text">Lane</span>
+                            </label>
+                            <label for="mbpslane" class="mbpslane-wrap">
+                                <input type="text" name="mbpslane" id="mbpslane" value="1200" data-popup="input-text">
+                                <span class="text">Mbps/lane</span>
+                            </label>
+                            <label for="select-video" class="select-video">
+                                <select name="select-video" id="select-video" data-popup="select" data-select="step2-mipi">
+                                    <option value="command">Command</option>
+                                    <option value="video" selected>Video</option>
+                                </select>
+                            </label>
+                            <label for="MIPI-video" class="MIPI-video">
+                                <select name="MIPI-video" id="MIPI-video" data-popup="select" data-select="step2-mipi">
+                                    <option value="" disabled selected hidden>Burst</option>
+                                    <option value="Pulses">Non-Burst with Sync Pulses</option>
+                                    <option value="Events">Non-Burst with Sync Events</option>
+                                </select>
+                            </label>
+                            <p class="MIPI-video-mode">
+                                <label for="single" class="single">
+                                    <input type="radio" name="MIPI-video-mode" id="single" value="single" field="radio" checked>
+                                    <span class="text">Single</span>
+                                </label>
+                                <label for="twin" class="twin">
+                                    <input type="radio" name="MIPI-video-mode" id="twin" value="twin" field="radio">
+                                    <span class="text">Twin</span>
+                                </label>
+                                <label for="dual-horizontal" class="dual-horizontal">
+                                    <input type="radio" name="MIPI-video-mode" id="dual-horizontal" value="dual-horizontal" field="radio">
+                                    <span class="text">Dual Left/Right</span>
+                                </label>
+                                <label for="dual-vertical" class="dual-vertical">
+                                    <input type="radio" name="MIPI-video-mode" id="dual-vertical" value="dual-vertical" field="radio">
+                                    <span class="text">Dual Top/Bottom</span>
+                                </label>
+                            </p>
+                        </div>
+                    </div>
+                    <div id="step2-DP">
+                        <div class="aux-option">
+                            <span class="title">AUX</span>
+                            <label for="speed" class="speed-wrap">
+                                <span class="label-text">Speed</span>
+                                <input type="text" name="speed" id="speed" value="1" data-popup="input-text">
+                            </label>
+                            <label for="precharge" class="precharge-wrap">
+                                <span class="label-text">Precharge</span>
+                                <input type="text" name="precharge" id="precharge" value="16" data-popup="input-text">
+                            </label>
+                            <label for="sync" class="sync-wrap">
+                                <span class="label-text">Sync</span>
+                                <input type="text" name="sync" id="sync" value="16" data-popup="input-text">
+                            </label>
+                            <label for="wakeup" class="wakeup-wrap">
+                                <span class="label-text">Wakeup</span>
+                                <input type="text" name="wakeup" id="wakeup" value="8" data-popup="input-text">
+                            </label>
+                        </div>
+                        <div class="video-option">
+                            <span class="title">Video Timing</span>
+                            <label for="DP-HACT" class="DP-HACT-wrap">
+                                <span class="label-text">HACT</span>
+                                <input type="text" name="DP-HACT" id="DP-HACT" value="1080" data-popup="input-text">
+                            </label>
+                            <label for="DP-VACT" class="DP-VACT-wrap">
+                                <span class="label-text">VACT</span>
+                                <input type="text" name="DP-VACT" id="DP-VACT" value="1920" data-popup="input-text">
+                            </label>
+                            <label for="DP-FPS" class="DP-FPS-wrap">
+                                <span class="label-text">FPS</span>
+                                <input type="text" name="DP-FPS" id="DP-FPS" value="120" data-popup="input-text">
+                            </label>
+                            <label for="DP-VBP" class="DP-VBP-wrap">
+                                <span class="label-text">VBP</span>
+                                <input type="text" name="DP-VBP" id="DP-VBP" value="20" data-popup="input-text">
+                            </label>
+                            <label for="DP-VFP" class="DP-VFP-wrap">
+                                <span class="label-text">VFP</span>
+                                <input type="text" name="DP-VFP" id="DP-VFP" value="20" data-popup="input-text">
+                            </label>
+                            <label for="DP-HBP" class="DP-HBP-wrap">
+                                <span class="label-text">HBP</span>
+                                <input type="text" name="DP-HBP" id="DP-HBP" value="20" data-popup="input-text">
+                            </label>
+                            <label for="DP-HFP" class="DP-HFP-wrap">
+                                <span class="label-text">HFP</span>
+                                <input type="text" name="DP-HFP" id="DP-HFP" value="20" data-popup="input-text">
+                            </label>
+                            <label for="DP-VSA" class="DP-VSA-wrap">
+                                <span class="label-text">VSA</span>
+                                <input type="text" name="DP-VSA" id="DP-VSA" value="4" data-popup="input-text">
+                            </label>
+                            <label for="DP-HSA" class="DP-HSA-wrap">
+                                <span class="label-text">HSA</span>
+                                <input type="text" name="DP-HSA" id="DP-HSA" value="32" data-popup="input-text">
+                            </label>
+                            <label for="DP-TUSIZE" class="DP-TUSIZE-wrap">
+                                <span class="label-text">TUSIZE</span>
+                                <input type="text" name="DP-TUSIZE" id="DP-TUSIZE" value="20" data-popup="input-text">
+                            </label>
+                            <label for="DP-VASIZE" class="DP-VASIZE-wrap">
+                                <span class="label-text">VASIZE</span>
+                                <input type="text" name="DP-VASIZE" id="DP-VASIZE" value="20" data-popup="input-text">
+                            </label>
+                            <label for="DP-VBD" class="DP-VBD-wrap">
+                                <span class="label-text">VBD</span>
+                                <input type="text" name="DP-VBD" id="DP-VBD" value="20" data-popup="input-text">
+                            </label>
+                            <label for="DP-VFD" class="DP-VFD-wrap">
+                                <span class="label-text">VFD</span>
+                                <input type="text" name="DP-VFD" id="DP-VFD" value="20" data-popup="input-text">
+                            </label>
+                        </div>
+                        <div class="dp-option">
+                            <span class="title">DP</span>
+                            <label for="DP-lane" class="DP-lane-wrap">
+                                <span class="label-text">Lane</span>
+                                <input type="text" name="DP-lane" id="DP-lane" value="4" data-popup="input-text">
+                            </label>
+                            <label for="DP-late" class="DP-late-wrap">
+                                <span class="label-text">Rate</span>
+                                <input type="text" name="DP-late" id="DP-late" value="16" data-popup="input-text">
+                            </label>
+                            <label for="DP-color" class="DP-color-wrap">
+                                <span class="label-text">Color</span>
+                                <select name="DP-color" id="DP-color" data-popup="select">
+                                    <option value="RGB" selected>RGB</option>
+                                    <option value="YCBCR444">YCBCR444</option>
+                                    <option value="YCBCR422">YCBCR422</option>
+                                </select>
+                            </label>
+                            <label for="DP-bpc" class="DP-bpc-wrap">
+                                <span class="label-text">BPC<span> (Bits Per Component)</span></span>
+                                <select name="DP-bpc" id="DP-bpc" data-popup="select">
+                                    <option value="BPC8">BPC6</option>
+                                    <option value="BPC8" selected>BPC8</option>
+                                    <option value="BPC8">BPC9</option>
+                                    <option value="BPC8">BPC10</option>
+                                    <option value="BPC8">BPC11</option>
+                                    <option value="BPC8">BPC12</option>  
+                                </select>
+                            </label>
+                        </div>
+                        <div class="link-option">
+                            <span class="title">Link Training</span>
+                            <label for="lt" class="lt-wrap">
+                                <span class="label-text">LT</span>
+                                <select name="lt" id="lt" data-popup="select">
+                                    <option value="full" selected>Full LT</option>
+                                    <option value="fast">Fast LT</option>
+                                    <option value="quick">Quick LT</option>
+                                    <option value="no">No LT</option>
+                                </select>
+                            </label>
+                            <label for="cr-times" class="cr-times-wrap">
+                                <span class="label-text">CR-times</span>
+                                <input type="text" name="cr-times" id="cr-times" value="300" data-popup="input-text">
+                            </label>
+                            <label for="sl-times" class="sl-times-wrap">
+                                <span class="label-text">SL-times</span>
+                                <input type="text" name="sl-times" id="sl-times" value="300" data-popup="input-text">
+                            </label>
+                            <label for="sl-pat" class="sl-pat-wrap">
+                                <span class="label-text">SL-pat</span>
+                                <select name="sl-pat" id="sl-pat" data-popup="select">
+                                    <option value="tps2" selected>tps2</option>
+                                    <option value="tps3">tps3</option>
+                                    <option value="tps4">tps4</option>
+                                </select>
+                            </label>
+                            <label for="method" class="method-wrap">
+                                <span class="label-text">Method</span>
+                                <select name="method" id="method" data-popup="select">
+                                    <option value="manual" selected>manual</option>
+                                    <option value="auto">auto</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                    <div id="step3">
+                        <div class="gpio-option">
+                            <span class="title">GPIO</span>
+                            <label for="gpio0" class="gpio0-wrap">
+                                <span class="label-text">GPIO(0)</span>
+                                <input type="text" name="gpio0" id="gpio0" value="RESX" data-popup="input-text">
+                            </label>
+                            <label for="gpio1" class="gpio1-wrap">
+                                <span class="label-text">GPIO(1)</span>
+                                <input type="text" name="gpio1" id="gpio1" value="-" data-popup="input-text">
+                            </label>
+                            <label for="gpio2" class="gpio2-wrap">
+                                <span class="label-text">GPIO(2)</span>
+                                <input type="text" name="gpio2" id="gpio2" value="-" data-popup="input-text">
+                            </label>
+                            <label for="gpio3" class="gpio3-wrap">
+                                <span class="label-text">GPIO(3)</span>
+                                <input type="text" name="gpio3" id="gpio3" value="-" data-popup="input-text">
+                            </label>
+                            <label for="gpio4" class="gpio4-wrap">
+                                <span class="label-text">GPIO(4)</span>
+                                <input type="text" name="gpio4" id="gpio4" value="-" data-popup="input-text">
+                            </label>
+                            <label for="gpio5" class="gpio5-wrap">
+                                <span class="label-text">GPIO(5)</span>
+                                <input type="text" name="gpio5" id="gpio5" value="-" data-popup="input-text">
+                            </label>
+                            <label for="gpio6" class="gpio6-wrap">
+                                <span class="label-text">GPIO(6)</span>
+                                <input type="text" name="gpio6" id="gpio6" value="-" data-popup="input-text">
+                            </label>
+                            <label for="gpio7" class="gpio7-wrap">
+                                <span class="label-text">GPIO(7)</span>
+                                <input type="text" name="gpio7" id="gpio7" value="-" data-popup="input-text">
+                            </label>
+                        </div>
+                        <div class="power-option">
+                            <span class="title">Power</span>
+                            <label for="pwr1" class="pwr1-wrap">
+                                <span class="label-text">PWR(1)</span>
+                                <input type="text" name="pwr1" id="pwr1" value="VIO" data-popup="input-text">
+                            </label>
+                            <label for="pwr1-volt" class="pwr1-volt-wrap">
+                                <input type="text" name="pwr1-volt" id="pwr1-volt" value="1.8" data-popup="input-text">
+                                <span class="label-text">V</span>
+                            </label>
+                            <label for="pwr6" class="pwr6-wrap">
+                                <span class="label-text">PWR(6)</span>
+                                <input type="text" name="pwr0" id="pwr0" value="-" data-popup="input-text">
+                            </label>
+                            <label for="pwr6-volt" class="pwr6-volt-wrap">
+                                <input type="text" name="pwr6-volt" id="pwr6-volt" value="-" data-popup="input-text">
+                                <span class="label-text">V</span>
+                            </label>
+                            <label for="pwr2" class="pwr2-wrap">
+                                <span class="label-text">PWR(2)</span>
+                                <input type="text" name="pwr2" id="pwr2" value="VIC" data-popup="input-text">
+                            </label>
+                            <label for="pwr2-volt" class="pwr2-volt-wrap">
+                                <input type="text" name="pwr2-volt" id="pwr2-volt" value="3.0" data-popup="input-text">
+                                <span class="label-text">V</span>
+                            </label>
+                            <label for="pwr7" class="pwr7-wrap">
+                                <span class="label-text">PWR(7)</span>
+                                <input type="text" name="pwr7" id="pwr7" value="-" data-popup="input-text">
+                            </label>
+                            <label for="pwr7-volt" class="pwr7-volt-wrap">
+                                <input type="text" name="pwr7-volt" id="pwr7-volt" value="-" data-popup="input-text">
+                                <span class="label-text">V</span>
+                            </label>
+                            <label for="pwr3" class="pwr3-wrap">
+                                <span class="label-text">PWR(3)</span>
+                                <input type="text" name="pwr3" id="pwr3" value="-" data-popup="input-text">
+                            </label>
+                            <label for="pwr3-volt" class="pwr3-volt-wrap">
+                                <input type="text" name="pwr3-volt" id="pwr3-volt" value="-" data-popup="input-text">
+                                <span class="label-text">V</span>
+                            </label>
+                            <label for="pwr8" class="pwr8-wrap">
+                                <span class="label-text">PWR(8)</span>
+                                <input type="text" name="pwr8" id="pwr8" value="VBAT" data-popup="input-text">
+                            </label>
+                            <label for="pwr8-volt" class="pwr8-volt-wrap">
+                                <input type="text" name="pwr8-volt" id="pwr8-volt" value="3.8" data-popup="input-text">
+                                <span class="label-text">V</span>
+                            </label>
+                            <label for="pwr4" class="pwr4-wrap">
+                                <span class="label-text">PWR(4)</span>
+                                <input type="text" name="pwr4" id="pwr4" value="-" data-popup="input-text">
+                            </label>
+                            <label for="pwr4-volt" class="pwr4-volt-wrap">
+                                <input type="text" name="pwr4-volt" id="pwr4-volt" value="-" data-popup="input-text">
+                                <span class="label-text">V</span>
+                            </label>
+                            <label for="pwr9" class="pwr9-wrap">
+                                <span class="label-text">PWR(9)</span>
+                                <input type="text" name="pwr9" id="pwr9" value="VPP" data-popup="input-text">
+                            </label>
+                            <label for="pwr9-volt" class="pwr9-volt-wrap">
+                                <input type="text" name="pwr9-volt" id="pwr9-volt" value="6.0" data-popup="input-text">
+                                <span class="label-text">V</span>
+                            </label>
+                            <label for="pwr5" class="pwr5-wrap">
+                                <span class="label-text">PWR(5)</span>
+                                <input type="text" name="pwr5" id="pwr5" value="-" data-popup="input-text">
+                            </label>
+                            <label for="pwr5-volt" class="pwr5-volt-wrap">
+                                <input type="text" name="pwr5-volt" id="pwr5-volt" value="-" data-popup="input-text">
+                                <span class="label-text">V</span>
+                            </label>
+                            <label for="pwr10" class="pwr10-wrap">
+                                <span class="label-text">PWR(10)</span>
+                                <input type="text" name="pwr10" id="pwr10" value="-" data-popup="input-text">
+                            </label>
+                            <label for="pwr10-volt" class="pwr10-volt-wrap">
+                                <input type="text" name="pwr10-volt" id="pwr10-volt" value="-" data-popup="input-text">
+                                <span class="label-text">V</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="ctrl-wrap">
+                        <input type="button" value="Cancel" data-popup="btn-cancel">
+                        <input type="button" value="&#60   Previous" data-popup="btn-previous">
+                        <input type="button" value="Next   &#62" data-popup="btn-next">
+                        <input type="submit" value="Finish" data-popup="btn-finish" disabled>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+    <div class="popup-del-project">
+        <div class="awning" data-popup="awning"></div>
+        <div class="del-box" data-popup="box-wrap" >
+            <section class="nav" data-popup="nav">
+                <span class="title" data-popup="nav-title">Delete Project</span>
+                <span class="cancel-ico" data-popup="ico-close"></span>
+            </section>
+            <section class="main" data-popup="main">
+                <div class="area-text">
+                    <p class="text">Do you really want to delete this Project?</p>
+                </div>
+                <div class="ctrl-wrap">
+                    <input type="button" value="Cancel" data-popup="btn-cancel">
+                    <input type="button" value="Delete" data-popup="btn-delete">
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="popup-alert">
+        <div class="awning" data-popup="awning"></div>
+        <div class="alert-box" data-popup="box-wrap" >
+            <section class="nav" data-popup="nav">
+                <span class="title" data-popup="nav-title">Alert</span>
+                <span class="cancel-ico" data-popup="ico-close"></span>
+            </section>
+            <section class="main" data-popup="main">
+                <div class="area-text">
+                    <p class="text">The Project Name is empty</p>
+                </div>
+                <div class="ctrl-wrap">
+                    <input type="button" value="OK" data-popup="btn-ok">
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- 테스트용 html 파트 입니다.-->
+    <div class="ex">
+        <span>hello, lee</span>
+    </div>
+    <!------------------------------>
+</body>
+</html>

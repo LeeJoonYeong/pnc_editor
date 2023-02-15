@@ -1,0 +1,1713 @@
+<!DOCTYPE html>
+<html lang="ko" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>run</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <script defer src="../javascripts/run.js"></script>
+</head>
+<body id="run-body" oncontextmenu="return false" onselectstart="return false" ondragstart="return false" >
+    <nav class="nav-wrap">
+        <div class="logo-box">
+            <img src="../images/general-logo.png" alt="pnc_logo">
+        </div>
+        <div class="net-condition"></div>
+        <div class="setting"></div>
+        <div class="save-box">
+            <span class="img"></span>
+            <span class="text">Save</span>
+        </div>
+        <div class="back-box">
+            <span class="img"></span>
+            <span class="text">Back</span>
+        </div>
+    </nav>
+    <main class="run-main-wrap">
+        <section id="project-name">
+            <div class="title-box">
+                <span title="run">PROJECT NAME</span>
+            </div>
+            <div class="cont-box">
+                <div class="directory" data-run="directory">
+                    <p class="folder" data-run="folder">
+                        <span class="btn_arrow" data-run="btn-arrow"></span>
+                        <span class="ico" data-run="ico"></span>
+                        <span class="text" data-run="text">Preparation</span>
+                        <span class="add-ico" data-run="add-ico"></span>
+                    </p>
+                    <ul class="list">
+                        <p class="folder" data-run="folder">
+                            <span class="btn_arrow" data-run="btn-arrow"></span>
+                            <span class="ico" data-run="ico"></span>
+                            <span class="text" data-run="text">Health Check</span>
+                            <span class="add-ico" data-run="add-ico"></span>
+                        </p>
+                        <ul class="list">
+                            <li>
+                                <span class="file-ico"></span>
+                                <span class="text">check<span></span><span>.txt</span></span>
+                                <span class="run-ico"></span>
+                                <span class="rename-ico" data-run="rename-ico"></span>
+                                <span class="delete-ico" data-run="delete-ico"></span>
+                                <input class="rename" type="text" maxlength="15" value="check">
+                                <div class="tooltip">
+                                    <span class="text">this name already exists.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </ul>
+                    <p class="folder" data-run="folder">
+                        <span class="btn_arrow active" data-run="btn-arrow"></span>
+                        <span class="ico" data-run="ico"></span>
+                        <span class="text" data-run="text">Setup</span>
+                        <span class="add-ico" data-run="add-ico"></span>
+                    </p>
+                    <ul class="list active">
+                        <p class="folder" data-run="folder">
+                            <span class="btn_arrow active" data-run="btn-arrow"></span>
+                            <span class="ico" data-run="ico"></span>
+                            <span class="text" data-run="text">Buttons</span>
+                            <span class="add-ico" data-run="add-ico"></span>
+                        </p>
+                        <ul class="list active">
+                            <li class="selected">
+                                <span class="file-ico"></span>
+                                <span class="text">play<span></span><span>.txt</span></span>
+                                <span class="run-ico"></span>
+                                <span class="rename-ico" data-run="rename-ico"></span>
+                                <span class="delete-ico" data-run="delete-ico"></span>
+                                <input class="rename" type="text" maxlength="15" value="play">
+                                <div class="tooltip">
+                                    <span class="text">this name already exists.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="file-ico"></span>
+                                <span class="text">stop<span></span><span>.txt</span></span>
+                                <span class="run-ico"></span>
+                                <span class="rename-ico" data-run="rename-ico"></span>
+                                <span class="delete-ico" data-run="delete-ico"></span>
+                                <input class="rename" type="text" maxlength="15" value="stop">
+                                <div class="tooltip">
+                                    <span class="text">this name already exists.</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="folder" data-run="folder">
+                            <span class="btn_arrow" data-run="btn-arrow"></span>
+                            <span class="ico" data-run="ico"></span>
+                            <span class="text" data-run="text">Patterns</span>
+                            <span class="add-ico" data-run="add-ico"></span>
+                        </p>
+                        <ul class="list">
+                            <li>
+                                <span class="file-ico"></span>
+                                <span class="text">list<span></span><span>.txt</span></span>
+                                <span class="run-ico"></span>
+                                <span class="rename-ico" data-run="rename-ico"></span>
+                                <span class="delete-ico" data-run="delete-ico"></span>
+                                <input class="rename" type="text" maxlength="15" value="list">
+                                <div class="tooltip">
+                                    <span class="text">this name already exists.</span>
+                                </div>
+                            </li>
+                            <p class="folder" data-run="folder">
+                                <span class="btn_arrow" data-run="btn-arrow"></span>
+                                <span class="ico" data-run="ico"></span>
+                                <span class="text" data-run="text">Resources</span>
+                                <span class="add-ico" data-run="add-ico"></span>
+                            </p>
+                            <ul class="list">
+                                <li data-run="file-bmp">
+                                    <span class="file-ico"></span>
+                                    <span class="text">aa<span></span><span>.bmp</span></span>
+                                    <span class="run-ico"></span>
+                                    <span class="rename-ico" data-run="rename-ico"></span>
+                                    <span class="delete-ico" data-run="delete-ico"></span>
+                                    <input class="rename" type="text" maxlength="15" value="aa">
+                                    <div class="tooltip">
+                                        <span class="text">this name already exists.</span>
+                                    </div>
+                                </li>
+                                <li data-run="file-bmp">
+                                    <span class="file-ico"></span>
+                                    <span class="text">bb<span></span><span>.bmp</span></span>
+                                    <span class="run-ico"></span>
+                                    <span class="rename-ico" data-run="rename-ico"></span>
+                                    <span class="delete-ico" data-run="delete-ico"></span>
+                                    <input class="rename" type="text" maxlength="15" value="bb">
+                                    <div class="tooltip">
+                                        <span class="text">this name already exists.</span>
+                                    </div>
+                                </li>
+                                <li data-run="file-bmp">
+                                    <span class="file-ico"></span>
+                                    <span class="text">cc<span></span><span>.bmp</span></span>
+                                    <span class="run-ico"></span>
+                                    <span class="rename-ico" data-run="rename-ico"></span>
+                                    <span class="delete-ico" data-run="delete-ico"></span>
+                                    <input class="rename" type="text" maxlength="15" value="cc">
+                                    <div class="tooltip">
+                                        <span class="text">this name already exists.</span>
+                                    </div>
+                                </li>
+                                <li data-run="file-bmp">
+                                    <span class="file-ico"></span>
+                                    <span class="text">dd<span></span><span>.bmp</span></span>
+                                    <span class="run-ico"></span>
+                                    <span class="rename-ico" data-run="rename-ico"></span>
+                                    <span class="delete-ico" data-run="delete-ico"></span>
+                                    <input class="rename" type="text" maxlength="15" value="dd">
+                                    <div class="tooltip">
+                                        <span class="text">this name already exists.</span>
+                                    </div>
+                                </li>
+                            </ul>              
+                        </ul>
+                        <p class="folder" data-run="folder">
+                            <span class="btn_arrow" data-run="btn-arrow"></span>
+                            <span class="ico" data-run="ico"></span>
+                            <span class="text" data-run="text">Test & Debug</span>
+                            <span class="add-ico" data-run="add-ico"></span>
+                        </p>
+                        <ul class="list">
+                            <li>
+                                <span class="file-ico"></span>
+                                <span class="text">untitled1<span></span><span>.txt</span></span>
+                                <span class="run-ico"></span>
+                                <span class="rename-ico" data-run="rename-ico"></span>
+                                <span class="delete-ico" data-run="delete-ico"></span>
+                                <input class="rename" type="text" maxlength="15" value="untitled1">
+                                <div class="tooltip">
+                                    <span class="text">this name already exists.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="file-ico"></span>
+                                <span class="text">untitled2<span></span><span>.txt</span></span>
+                                <span class="run-ico"></span>
+                                <span class="rename-ico" data-run="rename-ico"></span>
+                                <span class="delete-ico" data-run="delete-ico"></span>
+                                <input class="rename" type="text" maxlength="15" value="untitled2">
+                                <div class="tooltip">
+                                    <span class="text">this name already exists.</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="folder" data-run="folder">
+                            <span class="btn_arrow" data-run="btn-arrow"></span>
+                            <span class="ico" data-run="ico"></span>
+                            <span class="text" data-run="text">App & Data</span>
+                            <span class="add-ico" data-run="add-ico"></span>
+                        </p>
+                        <ul class="list">
+                            <li>
+                                <span class="file-ico"></span>
+                                <span class="text">mytest<span></span><span>.txt</span></span>
+                                <span class="run-ico"></span>
+                                <span class="rename-ico" data-run="rename-ico"></span>
+                                <span class="delete-ico" data-run="delete-ico"></span>
+                                <input class="rename" type="text" maxlength="15" value="mytest">
+                                <div class="tooltip">
+                                    <span class="text">this name already exists.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="file-ico"></span>
+                                <span class="text">demura<span></span><span>.txt</span></span>
+                                <span class="run-ico"></span>
+                                <span class="rename-ico" data-run="rename-ico"></span>
+                                <span class="delete-ico" data-run="delete-ico"></span>
+                                <input class="rename" type="text" maxlength="15" value="demura">
+                                <div class="tooltip">
+                                    <span class="text">this name already exists.</span>
+                                </div>
+                            </li>
+                        </ul>       
+                    </ul>
+                    <p class="folder" data-run="folder">
+                        <span class="btn_arrow" data-run="btn-arrow"></span>
+                        <span class="ico" data-run="ico"></span>
+                        <span class="text" data-run="text">Verify</span>
+                        <span class="add-ico" data-run="add-ico"></span>
+                    </p>
+                    <ul class="list">
+                        <li>
+                            <span class="file-ico"></span>
+                            <span class="text">basic<span></span><span>.txt</span></span>
+                            <span class="run-ico"></span>
+                            <span class="rename-ico" data-run="rename-ico"></span>
+                            <span class="delete-ico" data-run="delete-ico"></span>
+                            <input class="rename" type="text" maxlength="15" value="basic">
+                            <div class="tooltip">
+                                <span class="text">this name already exists.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="run-wrap">
+            <div class="run-box">
+                <div class="file-box">
+                    <div class="container-wrap">
+                        <div class="container" data-container="check">
+                            <span class="file">check.txt</span>
+                            <span class="close_ico"></span>
+                        </div>
+                        <div class="container active selected" data-container="play">
+                            <span class="file">play.txt</span>
+                            <span class="close_ico"></span>
+                        </div>
+                        <div class="container active" data-container="stop">
+                            <span class="file">stop.txt</span>
+                            <span class="close_ico"></span>
+                        </div>
+                        <div class="container" data-container="list">
+                            <span class="file">list.txt</span>
+                            <span class="close_ico"></span>
+                        </div>
+                        <div class="container active" data-container="untitled1">
+                            <span class="file">untitled1.txt</span>
+                            <span class="close_ico"></span>
+                        </div>
+                        <div class="container" data-container="untitled2">
+                            <span class="file">untitled2.txt</span>
+                            <span class="close_ico"></span>
+                        </div>
+                        <div class="container" data-container="mytest">
+                            <span class="file">mytest.txt</span>
+                            <span class="close_ico"></span>
+                        </div>
+                        <div class="container" data-container="demura">
+                            <span class="file">demura.txt</span>
+                            <span class="close_ico"></span>
+                        </div>
+                        <div class="container" data-container="basic">
+                            <span class="file">basic.txt</span>
+                            <span class="close_ico"></span>
+                        </div>
+                    </div>
+                    <span class="save-ico">
+                        <div class="tooltip" data-run="tooltip">
+                            <span class="text">Save</span>
+                        </div>
+                    </span>
+                    <span class="run-ico">
+                        <div class="tooltip" data-run="tooltip">
+                            <span class="text">Run</span>
+                        </div>
+                    </span>
+                </div>
+                <div class="num-box active">
+                    <ol>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li>30</li>
+                    </ol> 
+                </div>
+                <div class="cont-box">   
+                    <ul data-file="check">
+                        <li>    
+                            <input type="text" data-run="text" value="check.txt">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                    </ul>           
+                    <ul class="active" data-file="play">
+                        <li>    
+                            <input type="text" data-run="text" value="key.key_put(“play”,“lgd_play_20200110”);int main(int argc, char* argv[]) {printf">
+                        </li>
+                        <li>                          
+                            <input type="text" data-run="text" value="mipi.mode twin">
+                        </li>
+                        <li>                           
+                            <input type="text" data-run="text" value="mipi.rate 1.5gbps">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text" value="mipi.dsi 4 command dsc">
+                        </li>
+                        <li>                          
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>                           
+                            <input type="text" data-run="text" value="mipi.write 0x05 0x11">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text" value="mipi.write 0x05 0x29">
+                        </li>
+                        <li>                          
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>                           
+                            <input type="text" data-run="text" value="#This is comments">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>                          
+                            <input type="text" data-run="text" value="mipi.video.enable">
+                        </li>
+                        <li>                           
+                            <input type="text" data-run="text" value="delay 30">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>                          
+                            <input type="text" data-run="text" value="mipi.write 0x39 0xAA 0xBB 0xCC">
+                        </li>
+                        <li>                           
+                            <input type="text" data-run="text" value="mipi.write 0x39 0xDD 0xEE 0xFF">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>                          
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>                           
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>                          
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>                           
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>                          
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>                           
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>                          
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>                           
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>                          
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>                           
+                            <input type="text" data-run="text">
+                        </li>
+                    </ul>
+                    <ul data-file="stop">
+                        <li>    
+                            <input type="text" data-run="text" value="stop.txt">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                    </ul>
+                    <ul data-file="list">
+                        <li>    
+                            <input type="text" data-run="text" value="list.txt">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                    </ul>
+                    <ul data-file="untitled1">
+                        <li>    
+                            <input type="text" data-run="text" value="untitled1.txt">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                    </ul>
+                    <ul data-file="untitled2">
+                        <li>    
+                            <input type="text" data-run="text" value="untitled2.txt">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                    </ul>
+                    <ul data-file="mytest">
+                        <li>    
+                            <input type="text" data-run="text" value="mytest.txt">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                    </ul>
+                    <ul data-file="demura">
+                        <li>    
+                            <input type="text" data-run="text" value="demura.txt">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                    </ul>
+                    <ul data-file="basic">
+                        <li>    
+                            <input type="text" data-run="text" value="basic.txt">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="console-box">
+                <div class="title-box">
+                    <span title="run">CONSOLE</span>
+                    <span class="clear-ico">
+                        <div class="tooltip" data-run="tooltip">
+                            <span class="text">Clear</span>
+                        </div>
+                    </span>
+                    <span class="run-ico">
+                        <div class="tooltip" data-run="tooltip">
+                            <span class="text">Run</span>
+                        </div>
+                    </span>
+                </div>
+                <div class="num-box">
+                    <ol>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ol>
+                </div>
+                <div class="cont-box">
+                    <ul>
+                        <li>    
+                            <input type="text" data-run="text" value="mipi.write 0x37 0x0A" readonly>
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text" value="mipi.read 0x06 0xAA" readonly>
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text" value="mipi.write 0x37 0x0A" readonly>
+                        </li>
+                        <li>    
+                            <input type="text" data-run="text" value="mipi.read 0x06 0xAA" readonly>
+                        </li>
+                    </ul>
+                </div>
+                <div class="handle"></div>
+            </div>
+            <div class="msg-box">
+                <div class="title-box">
+                    <span title="run">MESSAGES</span>
+                </div>
+                <div class="cont-box">
+                    <p class="msg">
+                        Successfully finished<br>
+                        <span style="color: #e75863;">
+                            Error : Unknown Command
+                            <br>
+                            Warning :
+                        </span>
+                    </p>
+                </div>
+                <div class="handle"></div>
+            </div>
+            <div class="border" data-border="run-main-section"></div>
+        </section>
+        <section id="patterns-list">
+            <div class="title-box">
+                <span title="run">PATTERNS LIST</span>
+                <div class="count-box">
+                    <span class="count">0 / 1000</span>
+                </div>
+                <span class="expand-ico">
+                    <div class="tooltip" data-run="tooltip">
+                        <span class="text">Expand</span>
+                    </div>
+                </span>
+            </div>
+            <div class="cont-box">
+                <ul>
+                    <li>
+                        <img src="../images/img-run-pattern-thumb.png" alt="image-thumb">
+                        <span class="text">1 aa.bmp</span>
+                    </li>
+                    <li>
+                        <img src="../images/img-run-pattern-thumb.png" alt="image-thumb">
+                        <span class="text">2 bb.bmp</span>
+                    </li>
+                    <li>
+                        <img src="../images/img-run-pattern-thumb.png" alt="image-thumb">
+                        <span class="text">3 cc.bmp</span>
+                    </li>
+                    <li>
+                        <img src="../images/img-run-pattern-thumb.png" alt="image-thumb">
+                        <span class="text">4 dd.bmp</span>
+                    </li>
+                    <li>
+                        <img src="../images/img-run-pattern-thumb.png" alt="image-thumb">
+                        <span class="text">5 ee.bmp</span>
+                    </li>
+                    <li>
+                        <img src="../images/img-run-pattern-thumb.png" alt="image-thumb">
+                        <span class="text">6 ff.bmp</span>
+                    </li>
+                    <li>
+                        <img src="../images/img-run-pattern-thumb.png" alt="image-thumb">
+                        <span class="text">7 gg.bmp</span>
+                    </li>
+                    <li>
+                        <img src="../images/img-run-pattern-thumb.png" alt="image-thumb">
+                        <span class="text">8 hh.bmp</span>
+                    </li>
+                    <li>
+                        <img src="../images/img-run-pattern-thumb.png" alt="image-thumb">
+                        <span class="text">9 ii.bmp</span>
+                    </li>
+                    <li>
+                        <img src="../images/img-run-pattern-thumb.png" alt="image-thumb">
+                        <span class="text">10 jj.bmp</span>
+                    </li>
+                    <li>
+                        <img src="../images/img-run-pattern-thumb.png" alt="image-thumb">
+                        <span class="text">11 kk.bmp</span>
+                    </li>
+                    <li>
+                        <img src="../images/img-run-pattern-thumb.png" alt="image-thumb">
+                        <span class="text">12 ll.bmp</span>
+                    </li>
+                    <li>
+                        <img src="../images/img-run-pattern-thumb.png" alt="image-thumb">
+                        <span class="text">13 nn.bmp</span>
+                    </li>
+                    <li>
+                        <img src="../images/img-run-pattern-thumb.png" alt="image-thumb">
+                        <span class="text">14 mm.bmp</span>
+                    </li>
+                    <li>
+                        <img src="../images/img-run-pattern-thumb.png" alt="image-thumb">
+                        <span class="text">15 oo.bmp</span>
+                    </li>
+                    <li>
+                        <img src="../images/img-run-pattern-thumb.png" alt="image-thumb">
+                        <span class="text">1 aa.bmp</span>
+                    </li>
+                    <li>
+                        <img src="../images/img-run-pattern-thumb.png" alt="image-thumb">
+                        <span class="text">1 aa.bmp</span>
+                    </li>
+                    <li>
+                        <img src="../images/img-run-pattern-thumb.png" alt="image-thumb">
+                        <span class="text">1 aa.bmp</span>
+                    </li>
+                    <li>
+                        <img src="../images/img-run-pattern-thumb.png" alt="image-thumb">
+                        <span class="text">1 aa.bmp</span>
+                    </li>
+                    <li>
+                        <img src="../images/img-run-pattern-thumb.png" alt="image-thumb">
+                        <span class="text">1 aa.bmp</span>
+                    </li>
+                    <li>
+                        <img src="../images/img-run-pattern-thumb.png" alt="image-thumb">
+                        <span class="text">1 aa.bmp</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="border" data-border="run-main-section"></div>
+            <div class="handle"></div>
+        </section>
+        <section id="run-nav">
+            <div class="ico-box">
+                <span class="play-ico" data-ico="play"></span>
+                <span class="text">Play</span>
+            </div>
+            <div class="ico-box">
+                <span class="stop-ico" data-ico="stop"></span>
+                <span class="text">Stop</span>
+            </div>
+            <div class="ico-box">
+                <span class="next-ico" data-ico="next"></span>
+                <span class="text">Next</span>
+            </div>
+            <div class="ico-box">
+                <span class="prev-ico" data-ico="prev"></span>
+                <span class="text">Prev</span>
+            </div>
+            <div class="ico-box">
+                <span class="auto-ico" data-ico="auto"></span>
+                <span class="text">Auto</span>
+                <div class="tooltip">
+                    <input type="text" id="tooltip-auto" value="1" maxlength="3">
+                    <label for="tooltip-auto">Second</label>
+                </div>
+            </div>
+            <div class="ico-box">
+                <span class="shift-ico"></span>
+                <span class="text">Shift</span>
+            </div>
+            <div class="bottom-box">
+                <div class="ico-box">
+                    <span class="pixel-ico" data-ico="pixel"></span>
+                    <span class="text">Pixel<br>Peek</span>
+                </div>
+                <div class="ico-box">
+                    <span class="edid-ico" data-ico="edid"></span>
+                    <span class="text">EDID</span>
+                </div>
+                <div class="ico-box">
+                    <span class="monitor-ico"></span>
+                    <span class="text">Monitor</span>
+                </div>
+            </div>
+            <div class="border" data-border="run-main-section"></div>
+        </section>
+    </main>
+    <footer class="run-footer-wrap">
+        <div class="logo"></div>
+        <p class="pnc-info">PNC, People & Chips Inc.    I    Address : PANGYO TECHNO VALLEY #804, KSIA BLDG, 182, Pangyoyeok-ro, Bundang-gu, Seongnam-si, Gyeonggi-do, Korea    I    Tel : +82.31.628.5377    I    Fax : +82.31.628.5379</p>
+        <p class="pnc-ver">PNC Version : DIKI™ Gen 2.1</p>
+    </footer>
+    <div class="preferences-box" data-popup="box-wrap">
+            <section class="nav" data-popup="nav">
+                <span class="title" data-popup="nav-title">Preferences</span>
+                <span class="cancel-ico" data-popup="ico-close"></span>
+            </section>
+            <section class="main" data-popup="main">
+                <form action="#" id="preferences">
+                    <div class="theme">
+                        <p class="title">Theme</p>
+                        <div class="cont-box">
+                            <label for="dark">
+                                <input type="radio" id="dark" name="theme-mode" value="dark" field="radio" checked>
+                                <span class="text">DARK</span>
+                            </label>
+                            <label for="light">
+                                <input type="radio" id="light" name="theme-mode" value="light" field="radio">
+                                <span class="text">LIGHT</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="language">
+                        <p class="title">Language</p>
+                        <div class="cont-box">
+                            <label for="lang-kor">
+                                <input type="radio" id="lang-kor" name="language" value="lang-kor" field="radio" checked>
+                                <span class="text">한국어</span>
+                            </label>
+                            <label for="lang-eng">
+                                <input type="radio" id="lang-eng" name="language" value="lang-eng" field="radio">
+                                <span class="text">English</span>
+                            </label>
+                            <label for="lang-chn">
+                                <input type="radio" id="lang-chn" name="language" value="lang-chn" field="radio">
+                                <span class="text">中文</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="tooltip">
+                        <p class="title">Tooltip</p>
+                        <div class="cont-box">
+                            <label for="tooltip-hide">
+                                <input type="checkbox" id="tooltip-hide" name="tooltip-hide" value="hide">
+                                <span class="text">Hide Tooltip <span>(Hide tooltip that come out of the mouse hover)</span></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="function-key">
+                        <p class="title">Function Key</p>
+                        <div class="cont-box">
+                            <span class="text">Delete All Scripts (Including PLAY & STOP)</span>
+                            <div class="key-box">
+                                <span class="text">F2</span>
+                            </div>
+                            <span class="text">Send the Selected Command</span>
+                            <div class="key-box">
+                                <span class="text">F5</span>
+                            </div>
+                            <span class="text">Send the Current Line / Move to the Next Line</span>
+                            <div class="key-box">
+                                <span class="text">F7</span>
+                            </div>
+                            <span class="text">Send the Current Line</span>
+                            <div class="key-box">
+                                <span class="text">F8</span>
+                            </div>
+                            <span class="text">Send All Commands / Not Initialize Parameters</span>
+                            <div class="key-box">
+                                <span class="text">F11</span>
+                            </div>
+                            <span class="text">Send All Commands (=Send Command) / <br>
+                                Initialize Parameters</span>
+                            <div class="key-box">
+                                <span class="text">F12</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ctrl-wrap">
+                        <input type="button" value="Close" data-popup="btn-cancel">
+                        <input type="button" value="Apply" data-popup="btn-ok">
+                    </div>
+                </form>
+            </section>
+    </div>
+    <div class="pixel-box" data-popup="box-wrap">
+            <section class="nav" data-popup="nav">
+                <span class="title" data-popup="nav-title">Pixel Peek</span>
+                <span class="cancel-ico" data-popup="ico-close"></span>
+            </section>
+            <section class="main" data-popup="main">
+                <form action="#" id="pixel-peek">
+                    <div class="background">
+                        <p class="title">Background</p>
+                        <div class="cont-box">
+                            <section class="type">
+                                <p class="title">Type</p>
+                                <div class="cont-box">
+                                    <label for="mono">
+                                        <input type="radio" id="mono" name="background-type" value="mono" field="radio" data-popup="bg-type-mono" checked>
+                                        <span class="text">Mono</span>
+                                    </label>
+                                    <label for="stipe-h">
+                                        <input type="radio" id="stipe-h" name="background-type" value="stipe-h" field="radio" data-popup="bg-type-stipe-h">
+                                        <span class="text">Stripe-H</span>
+                                    </label>
+                                    <label for="stipe-v">
+                                        <input type="radio" id="stipe-v" name="background-type" value="stipe-v" field="radio" data-popup="bg-type-stipe-v">
+                                        <span class="text">Stripe-V</span>
+                                    </label>
+                                </div>
+                            </section>
+                            <section class="color">
+                                <p class="title">Color</p>
+                                <div class="cont-box">
+                                    <input type="text" name="bg-rgb-r" value="248" maxlength="3" data-popup="input-text" readonly>
+                                    <input type="text" name="bg-rgb-g" value="248" maxlength="3" data-popup="input-text" readonly>
+                                    <input type="text" name="bg-rgb-b" value="248" maxlength="3" data-popup="input-text" readonly>
+                                    <input type="text" name="R" value="R" data-popup="input-text" readonly disabled>
+                                    <input type="text" name="G" value="G" data-popup="input-text" readonly disabled>
+                                    <input type="text" name="B" value="B" data-popup="input-text" readonly disabled>
+                                </div>
+                            </section>
+                            <section class="thickness">
+                                <p class="title">Thickness</p>
+                                <div class="cont-box">
+                                    <input type="range" name="thickness" value="35" class="range" disabled>
+                                    <input type="text" name="thickness" value="3.5" data-popup="input-text" disabled>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="foreground">
+                        <p class="title">Foreground</p>
+                        <div class="cont-box">
+                            <section class="type">
+                                <p class="title">Type</p>
+                                <div class="cont-box">
+                                    <label for="type-horizontal">
+                                        <input type="radio" id="type-horizontal" name="foreground-type" value="horizontal" field="radio" checked>
+                                        <span class="text">Horizontal</span>
+                                    </label>
+                                    <label for="type-vertical">
+                                        <input type="radio" id="type-vertical" name="foreground-type" value="vertical" field="radio">
+                                        <span class="text">Vertical</span>
+                                    </label>
+                                    <label for="cross">
+                                        <input type="radio" id="cross" name="foreground-type" value="cross" field="radio">
+                                        <span class="text">Cross</span>
+                                    </label>
+                                </div>
+                            </section>
+                            <section class="color">
+                                <p class="title">Color</p>
+                                <div class="cont-box">
+                                    <input type="text" name="fg-rgb-r" value="248" maxlength="3" data-popup="input-text">
+                                    <input type="text" name="fg-rgb-g" value="248" maxlength="3" data-popup="input-text">
+                                    <input type="text" name="fg-rgb-b" value="248" maxlength="3" data-popup="input-text">
+                                </div>
+                            </section>
+                            <section class="position">
+                                <p class="title">Position</p>
+                                <div class="cont-box">
+                                    <label for="horizontal">Horizontal</label>
+                                    <input type="range" name="horizontal" value="35" class="range">
+                                    <input type="text" name="horizontal" id="horizontal" value="3.5" data-popup="input-text">
+                                    <label for="vertical">Vertical</label>
+                                    <input type="range" name="vertical" value="35" class="range">
+                                    <input type="text" name="vertical" id="vertical" value="3.5" data-popup="input-text">
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="ctrl-wrap">
+                        <input type="button" value="Close" data-popup="btn-cancel">
+                        <input type="button" value="Send" data-popup="btn-ok">
+                    </div>
+                </form>
+            </section>
+    </div>
+    <div class="edid-box" data-popup="box-wrap">
+            <section class="nav" data-popup="nav">
+                <span class="title" data-popup="nav-title">EDID</span>
+                <span class="cancel-ico" data-popup="ico-close"></span>
+            </section>
+            <section class="main" data-popup="main">
+                <form action="#" id="edid">
+                    <div class="img-box">
+                        <img src="../images/img-edid-graphic.png" alt="edid">
+                    </div>
+                    <div class="detailed-timings">
+                        <section class="info1">
+                            <p class="title">Detailed Timings</p>
+                            <label for="edid-HACT">
+                                <span class="label-text">HACT</span>
+                                <input type="text" name="HACT" value="1440" id="edid-HACT" maxlength="4" data-popup="input-text">
+                            </label>
+                            <label for="edid-VACT">
+                                <span class="label-text">VACT</span>
+                                <input type="text" name="VACT" value="3120" id="edid-VACT" maxlength="4" data-popup="input-text">
+                            </label>
+                            <label for="edid-HSA">
+                                <span class="label-text">HSA</span>
+                                <input type="text" name="HSA" value="32" id="edid-HSA" maxlength="4" data-popup="input-text">
+                            </label>
+                            <label for="edid-VSA">
+                                <span class="label-text">VSA</span>
+                                <input type="text" name="VSA" value="4" id="edid-VSA" maxlength="4" data-popup="input-text">
+                            </label>
+                            <label for="edid-HBP">
+                                <span class="label-text">HBP</span>
+                                <input type="text" name="HBP" value="64" id="edid-HBP" maxlength="4" data-popup="input-text">
+                            </label>
+                            <label for="edid-VBP">
+                                <span class="label-text">VBP</span>
+                                <input type="text" name="VBP" value="8" id="edid-VBP" maxlength="4" data-popup="input-text">
+                            </label>
+                            <label for="edid-HFP">
+                                <span class="label-text">HFP</span>
+                                <input type="text" name="HFP" value="8" id="edid-HFP" maxlength="4" data-popup="input-text">
+                            </label>
+                            <label for="edid-VFP">
+                                <span class="label-text">VFP</span>
+                                <input type="text" name="VFP" value="8" id="edid-VFP" maxlength="4" data-popup="input-text">
+                            </label>
+                        </section>
+                        <section class="info2">
+                            <label for="HBLANK">
+                                <span class="label-text">HBLANK</span>
+                                <input type="text" name="HBLANK" value="104" id="HBLANK" maxlength="4" data-popup="input-text" readonly>
+                            </label>
+                            <label for="VBLANK">
+                                <span class="label-text">VBLANK</span>
+                                <input type="text" name="VBLANK" value="20" id="VBLANK" maxlength="4" data-popup="input-text" readonly>
+                            </label>
+                        </section>
+                        <section class="info3">
+                            <label for="frame-rate">
+                                <span class="label-text">Frame Rate</span>
+                                <input type="text" name="frame-rate" value="30" id="frame-rate" maxlength="4" data-popup="input-text">
+                            </label>
+                            <label for="pixel-clock">
+                                <span class="label-text">Pixel Clock (Mhz)</span>
+                                <input type="text" name="pixel-clock" value="145.250000" id="pixel-clock" maxlength="10" data-popup="input-text">
+                            </label>
+                        </section>
+                        <section class="info4">
+                            <div class="img-server-box">
+                                <img src="../images/ic-edid-server.png" alt="edid-server">
+                            </div>
+                            <div class="cont-box">
+                                <div class="import">
+                                    <span class="ico"></span>
+                                    <span class="text">Import</span>
+                                </div>
+                                <div class="export">
+                                    <span class="ico"></span>
+                                    <span class="text">Export</span>
+                                </div>
+                            </div>
+                            <div class="img-pc-box">
+                                <img src="../images/ic-edid-pc.png" alt="edid-pc">
+                            </div>
+                        </section>
+                    </div>
+                    <div class="ctrl-wrap">
+                        <input type="button" value="Close" data-popup="btn-cancel">
+                        <input type="button" value="Set" data-popup="btn-ok">
+                        <input type="button" value="Get" data-popup="btn-get">
+                    </div>
+                </form>
+            </section>
+    </div>
+    <div class="popup-right-click">
+        <span class="ico"></span>
+        <span class="text">Run</span>
+    </div>
+    <div class="popup-back-alert">
+        <div class="awning" data-popup="awning"></div>
+        <div class="alert-box" data-popup="box-wrap">
+            <section class="nav" data-popup="nav">
+                <span class="title" data-popup="nav-title">Project Save Confirmation</span>
+                <span class="cancel-ico" data-popup="ico-close"></span>
+            </section>
+            <section class="main" data-popup="main">
+                <p class="text">Save changes to the “PROJECT NAME” before Return to Main?</p>
+                <div class="ctrl-wrap">
+                    <input type="button" value="No" data-popup="btn-cancel">
+                    <input type="button" value="Cancel" data-popup="btn-cancel">
+                    <input type="button" value="Yes" data-popup="btn-ok">
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="popup-save-alert">
+        <div class="awning" data-popup="awning"></div>
+        <div class="alert-box" data-popup="box-wrap">
+            <section class="nav" data-popup="nav">
+                <span class="title" data-popup="nav-title">Save Confirmation</span>
+                <span class="cancel-ico" data-popup="ico-close"></span>
+            </section>
+            <section class="main" data-popup="main">
+                <p class="text">Do you want to save All?</p>
+                <div class="ctrl-wrap">
+                    <input type="button" value="No" data-popup="btn-cancel">
+                    <input type="button" value="Cancel" data-popup="btn-cancel">
+                    <input type="button" value="Yes" data-popup="btn-ok">
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="popup-del-file">
+        <div class="awning" data-popup="awning"></div>
+        <div class="del-box" data-popup="box-wrap" >
+            <section class="nav" data-popup="nav">
+                <span class="title" data-popup="nav-title">Delete File</span>
+                <span class="cancel-ico" data-popup="ico-close"></span>
+            </section>
+            <section class="main" data-popup="main">
+                <div class="area-text">
+                    <p class="text">Do you really want to delete this file?</p>
+                </div>
+                <div class="ctrl-wrap">
+                    <input type="button" value="Cancel" data-popup="btn-cancel">
+                    <input type="button" value="Delete" data-popup="btn-delete">
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

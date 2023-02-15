@@ -1,0 +1,80 @@
+@charset 'utf-8';
+
+@font-face {
+    font-family: 'Noto Sans CJK KR DemiLight';
+    src: url('Noto Sans CJK KR Regular.eot');
+    src: url('Noto Sans CJK KR Regular.eot?#iefix') format('embedded-opentype'), url('Noto Sans CJK KR Regular.svg#Noto Sans CJK KR Regular') format('svg'), url('Noto Sans CJK KR Regular.ttf') format('truetype'), url('Noto Sans CJK KR Regular.woff') format('woff'), url('Noto Sans CJK KR Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans CJK KR Regular';
+    src: url('Noto Sans CJK KR Regular.eot');
+    src: url('Noto Sans CJK KR Regular.eot?#iefix') format('embedded-opentype'), url('Noto Sans CJK KR Regular.svg#Noto Sans CJK KR Regular') format('svg'), url('Noto Sans CJK KR Regular.ttf') format('truetype'), url('Noto Sans CJK KR Regular.woff') format('woff'), url('Noto Sans CJK KR Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans CJK KR Medium';
+    src: url('Noto Sans CJK KR Medium.eot');
+    src: url('Noto Sans CJK KR Medium.eot?#iefix') format('embedded-opentype'), url('Noto Sans CJK KR Medium.svg#Noto Sans CJK KR Medium') format('svg'), url('Noto Sans CJK KR Medium.ttf') format('truetype'), url('Noto Sans CJK KR Medium.woff') format('woff'), url('Noto Sans CJK KR Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans CJK KR Bold';
+    src: url('Noto Sans CJK KR Bold.eot');
+    src: url('Noto Sans CJK KR Bold.eot?#iefix') format('embedded-opentype'), url('Noto Sans CJK KR Bold.svg#Noto Sans CJK KR Bold') format('svg'), url('Noto Sans CJK KR Bold.ttf') format('truetype'), url('Noto Sans CJK KR Bold.woff') format('woff'), url('Noto Sans CJK KR Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*
+@font-face {
+    font-family: 'Noto Sans CJK KR DemiLight';
+    src: url('Noto Sans CJK KR DemiLight.eot');
+    src: url('Noto Sans CJK KR DemiLight.eot?#iefix') format('embedded-opentype'), url('Noto Sans CJK KR DemiLight.svg#Noto Sans CJK KR DemiLight') format('svg'), url('Noto Sans CJK KR DemiLight.ttf') format('truetype'), url('Noto Sans CJK KR DemiLight.woff') format('woff'), url('Noto Sans CJK KR DemiLight.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans CJK KR Regular';
+    src: local('Noto Sans DemiLight'), local('NotoSans-DemiLight'),
+    url(https://cdn.jsdelivr.net/gh/theeluwin/NotoSansKR-Hestia@master/fonts/eot/NotoSansKR-DemiLight-Hestia.eot),
+    url(https://cdn.jsdelivr.net/gh/theeluwin/NotoSansKR-Hestia@master/fonts/eot/NotoSansKR-DemiLight-Hestia.eot?#iefix) format('embedded-opentype'),
+    url(https://cdn.jsdelivr.net/gh/theeluwin/NotoSansKR-Hestia@master/fonts/woff/NotoSansKR-DemiLight-Hestia.woff) format('woff'),
+    url(https://cdn.jsdelivr.net/gh/theeluwin/NotoSansKR-Hestia@master/fonts/otf/NotoSansKR-DemiLight-Hestia.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans CJK KR Medium';
+    src: local('Noto Sans Medium'), local('NotoSans-Medium'),
+    url(https://cdn.jsdelivr.net/gh/theeluwin/NotoSansKR-Hestia@master/fonts/eot/NotoSansKR-Medium-Hestia.eot),
+    url(https://cdn.jsdelivr.net/gh/theeluwin/NotoSansKR-Hestia@master/fonts/eot/NotoSansKR-Medium-Hestia.eot?#iefix) format('embedded-opentype'),
+    url(https://cdn.jsdelivr.net/gh/theeluwin/NotoSansKR-Hestia@master/fonts/woff/NotoSansKR-Medium-Hestia.woff) format('woff'),
+    url(https://cdn.jsdelivr.net/gh/theeluwin/NotoSansKR-Hestia@master/fonts/otf/NotoSansKR-Medium-Hestia.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans CJK KR Bold';
+    src: local('Noto Sans Bold'), local('NotoSans-Bold'),
+    url(https://cdn.jsdelivr.net/gh/theeluwin/NotoSansKR-Hestia@master/fonts/eot/NotoSansKR-Bold-Hestia.eot),
+    url(https://cdn.jsdelivr.net/gh/theeluwin/NotoSansKR-Hestia@master/fonts/eot/NotoSansKR-Bold-Hestia.eot?#iefix) format('embedded-opentype'),
+    url(https://cdn.jsdelivr.net/gh/theeluwin/NotoSansKR-Hestia@master/fonts/woff/NotoSansKR-Bold-Hestia.woff) format('woff'),
+    url(https://cdn.jsdelivr.net/gh/theeluwin/NotoSansKR-Hestia@master/fonts/otf/NotoSansKR-Bold-Hestia.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*/
+
+

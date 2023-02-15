@@ -1,0 +1,1097 @@
+@charset 'utf-8';
+
+.nav-wrap {
+    /* width: 1280px; */
+    width: 100%;
+    height: 38px;
+    margin: 0 auto;
+    background-color: #2f3237;
+    border-bottom: 1px solid black;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 10;
+}
+ 
+.nav-wrap .logo-box {
+    width: 49px;
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+}
+
+.nav-wrap .net-condition {
+    width: 7px;
+    height: 7px;
+    background-color: #00BD40;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 71px;
+    transform: translateY(-50%);
+}
+
+.nav-wrap .net-text {
+    visibility: hidden;
+    width: 0;
+    height: 21px;
+    border-radius: 12.5px;
+    background-color: #25282c;
+    text-align: center;
+    overflow: hidden;
+    padding: 0 10px;
+    position: absolute;
+    top: 50%;
+    left: 88px;
+    transform: translateY(-50%);
+    transition: width 2s;
+}
+
+.nav-wrap .net-text.active {
+    visibility: visible;
+    width: 184px;
+}
+
+.nav-wrap .net-text .text{
+    height: 100%;
+    font-size: 11px;
+    color: #00bd40;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Noto Sans CJK KR Regular';
+}
+
+.nav-wrap .bg-mode-box {
+    width: 76px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    right: 162px;
+    transform: translateY(-50%);
+    background-color: #4c5259;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.nav-wrap .bg-mode-box.light {
+    background-color: #E0E4E6;
+}
+
+.nav-wrap .bg-mode-box .lever{
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border-radius: 100%;
+    transition: all .3s;
+    z-index: 1;
+}
+
+.nav-wrap .bg-mode-box .lever.light{
+    left: 54px;
+}
+
+.nav-wrap .bg-mode-box .text{
+    width: 41px;
+    height: 19px;
+    line-height: 19px;
+    position: absolute;
+    top: 50%;
+    right: 9px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 11px;
+    text-align: center;
+    font-family: 'Noto Sans CJK KR Medium';
+}
+
+.nav-wrap .bg-mode-box .text.light {
+    right: 0;
+    left: 9px;
+    color: #4d5256;
+}
+
+.nav-wrap .lang-box {
+    position: absolute;
+    top: 50%;
+    right: 4px;
+    transform: translateY(-50%);
+    font-size: 11px;
+    color: #abadaf;
+}
+
+.nav-wrap .lang-box ul li {
+    float: left;
+    padding: 0 10px;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Noto Sans CJK KR Regular';
+}
+
+.nav-wrap .lang-box ul li.active {
+    color: #fff;
+}
+
+.nav-wrap .lang-box ul li::before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 60%;
+    background-color: #646464;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.nav-wrap .lang-box ul li:last-child::before {
+    display: none;
+}
+
+.mn-main-wrap {
+    width: 1280px;
+    /* height: 682px; */
+    height: 100%;
+    margin: 0 auto;
+    display: flow-root;
+    position: relative;
+    top: -38px;
+}
+
+.mn-main-wrap .bg-left {
+    width: 5000px;
+    height: 100%;
+    position: absolute;
+    right: 1280px;
+    background-color: #2f3237;
+}
+
+.mn-main-wrap .bg-right {
+    width: 5000px;
+    height: 100%;
+    position: absolute;
+    left: 1280px;
+    background-color: #202326;
+}
+
+.mn-main-wrap .category-wrap {
+    width: 570px;
+    height: 100%;
+    background-color: #2f3237;
+    float: left;
+    padding: 70px 0 0 260px;
+}
+
+.mn-main-wrap .category-wrap > div {
+    margin-bottom: 20px;
+}
+
+.mn-main-wrap .category-wrap > div > .title {
+    width: 160px;
+    height: 39px;
+    line-height: 39px;
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Noto Sans CJK KR Medium';
+}
+
+.mn-main-wrap .category-wrap > div ul li {
+    float: left;
+    text-align: center;
+    margin-right: 12px;
+    position: relative;
+    cursor: pointer;
+}
+
+.mn-main-wrap .category-wrap > div ul li .info {
+    display: block;
+    width: 100%;
+    height: 26px;
+    line-height: 26px;
+    font-size: 11px;
+    color: #888a8e;
+    font-family: 'Noto Sans CJK KR Regular';
+}
+
+.mn-main-wrap .info-wrap {
+    width: 710px;
+    height: 100%;
+    background-color: #202326;
+    float: left;
+    padding: 70px 0 0 40px;
+}
+
+.mn-main-wrap .info-wrap .proj-box {
+    margin-bottom: 20px;
+}
+
+.mn-main-wrap .info-wrap .proj-box .title {
+    width: 140px;
+    height: 39px;
+    line-height: 39px;
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Noto Sans CJK KR Medium';
+}
+
+.mn-main-wrap .info-wrap .proj-box .filter {
+    width: 384px;
+    height: 29px;
+    position: relative;
+    font-size: 12px;
+    font-family: 'Noto Sans CJK KR Regular';
+}
+
+.mn-main-wrap .info-wrap .proj-box .filter span {
+    display: block;
+    width: 50%;
+    height: 100%;
+    line-height: 29px;
+    text-align: center;
+    color: #9da0a7; 
+    float: left;
+    border: 1px solid #4c5259;
+    border-radius: 2px;
+}
+
+.mn-main-wrap .info-wrap .proj-box .filter span:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.mn-main-wrap .info-wrap .proj-box .filter span.active {
+    background-color: #4c5259;
+    color: #fff;
+}
+
+.mn-main-wrap .info-wrap .proj-box .list {
+    width: 390px;
+    height: 207px;
+    margin-top: 8px;
+    overflow: overlay;
+}
+
+.mn-main-wrap .info-wrap .proj-box .list::-webkit-scrollbar {
+    width: 5px;
+    background-color: #202326;
+}
+
+.mn-main-wrap .info-wrap .proj-box .list::-webkit-scrollbar-thumb {
+    background-color: #4c5259;
+}
+
+.mn-main-wrap .info-wrap .proj-box .list li {
+    width: 100%;
+    height: 26px;
+    line-height: 26px;
+    position: relative;
+}
+
+.mn-main-wrap .info-wrap .proj-box .list li:hover {
+    background-color: #43464b;
+}
+
+.mn-main-wrap .info-wrap .proj-box .list li:hover .d-ico {
+    display: block;
+}
+
+.mn-main-wrap .info-wrap .proj-box .list li > .date {
+    display: block;
+    width: 116px;
+    height: 100%;
+    font-size: 12px;
+    color: #8f949f;
+    font-family: 'Noto Sans CJK KR Regular';
+}
+
+.mn-main-wrap .info-wrap .proj-box .list li > .f-ico {
+    display: block;
+    width: 13px;
+    height: 13px;
+    background: url(../images/ic-main-project.png) no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 146px;
+    transform: translateY(-50%);
+}
+
+.mn-main-wrap .info-wrap .proj-box .list li > .name {
+    display: block;
+    width: 167px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 165px;
+    font-size: 12px;
+    color: #c7cbd3;
+    font-family: 'Noto Sans CJK KR Medium';
+    cursor: pointer;
+}
+
+.mn-main-wrap .info-wrap .proj-box .list li > .d-ico {
+    display: none;
+    width: 25px;
+    height: 25px;
+    background: url(../images/btn-main-project-delete-normal.png) no-repeat;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.mn-main-wrap .info-wrap .proj-box .list li > .d-ico:hover {
+    background-image: url(../images/btn-main-project-delete-hover.png);
+}
+
+.mn-main-wrap .info-wrap .event-box {
+    width: 384px;
+    position: relative;
+}
+
+.mn-main-wrap .info-wrap .event-box .title-box {
+    width: 100%;
+    height: 39px;
+    position: relative;
+}
+
+.mn-main-wrap .info-wrap .event-box .title-box .title {
+    width: 140px;
+    height: 100%;
+    line-height: 39px;
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Noto Sans CJK KR Medium';
+}
+
+.mn-main-wrap .info-wrap .event-box .title-box .more-ico {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url(../images/btn-main-news-events-more-normal.png) no-repeat;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.mn-main-wrap .info-wrap .event-box .title-box .more-ico:hover {
+    background-image: url(../images/btn-main-news-events-more-hover.png);
+    cursor: pointer;
+}
+
+.mn-main-wrap .info-wrap .event-box .list {
+    width: 100%;
+    height: 51px;
+}
+
+.mn-main-wrap .info-wrap .event-box .list li {
+    position: relative;
+    height: 25px;
+}
+
+.mn-main-wrap .info-wrap .event-box .list li .subject {
+    display: block;
+    width: 238px;
+    font-size: 12px;
+    color: #c7cbd3;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-family: 'Noto Sans CJK KR Medium';
+}
+
+.mn-main-wrap .info-wrap .event-box .list li .date {
+    display: block;
+    width: 64px;
+    font-size: 12px;
+    color: #8f949f;
+    position: absolute;
+    top: 50%;
+    right: 42px;
+    transform: translateY(-50%);
+    font-family: 'Noto Sans CJK KR Regular';
+}
+
+.mn-main-wrap .info-wrap .event-box .ad {
+    width: 100%;
+    margin-top: 16px;
+}
+  
+/* Create Pop-up 파트 입니다. */
+
+.popup-create-project {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 1000;
+}
+
+.popup-create-project.active {
+    display: block;
+}
+
+.popup-create-project .create-box {
+    width: 762px;
+    height: 584px;
+}
+
+.popup-create-project .create-box .main{
+    width: 100%;
+    height: 544px;
+    border-radius: 0 0 5px 5px;
+    background-color: #202326;
+}
+
+.popup-create-project .create-box .main .create-form{
+    padding: 16px;
+    width: 100%;
+    height: 480px;
+    overflow: overlay;
+}
+
+.popup-create-project .create-box .main .create-form::-webkit-scrollbar {
+    width: 5px;
+    background-color: #202326;
+}
+
+.popup-create-project .create-box .main .create-form::-webkit-scrollbar-thumb {
+    background-color: #4c5259;
+}
+
+#step1 {
+    display: none;
+    margin: 8px;
+}
+
+#step1.active {
+    display: block;
+}
+
+#step1 .title{
+    font-size: 14px;
+    height: 22px;
+    color: #fff;
+    font-family: 'Noto Sans CJK KR Bold';
+}
+
+#step1 .subTitle{
+    font-size: 12px;
+    height: 40px;
+    line-height: 1.67;
+    color: #ddd;
+    margin: 10px 0 33px;
+    font-family: 'Noto Sans CJK KR Regular';
+}
+
+#step1 .proj-name,
+#step1 .proj-manager,
+#step1 .proj-standards {
+    display: flow-root;
+    margin-bottom: 26px;
+    position: relative;
+}
+
+#step1 .proj-name.active,
+#step1 .proj-manager.active {
+    margin-bottom: 44px;
+}
+
+#step1 .proj-name label,
+#step1 .proj-manager label,
+#step1 .proj-standards label{
+    display: block;
+    float: left;
+    width: 87px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    color: #ddd;
+    margin-right: 32px;
+    margin-top: 3px;
+    font-family: 'Noto Sans CJK KR Medium';
+}
+
+#step1 .proj-manager label{
+    width: 94px;
+    margin-right: 25px;
+}
+
+#step1 #proj-name,
+#step1 #proj-manager {
+    float: left;
+    width: 595px;
+}
+
+#step1 .proj-standards label {
+    width: 104px;
+    margin-right: 15px;
+    position: relative;
+}
+
+#step1 .proj-standards label:nth-of-type(2),
+#step1 .proj-standards label:nth-of-type(3) {
+    height: 27px;
+    margin-right: 5px;
+}
+
+#step1 .proj-standards #MIPI,
+#step1 .proj-standards #DP {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#step1 .proj-standards .MIPI-text,
+#step1 .proj-standards .DP-text {
+    display: block;
+    width: 118px;
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-family: 'Noto Sans CJK KR Regular';
+}
+
+#step1 .proj-standards .MIPI-img {
+    display: inline-block;
+    width: 37px;
+    height: 27px;
+    position: absolute;
+    top: 0;
+    left: 54px;
+    background: url(../images/img-main-logo-mipi.png) no-repeat;
+}
+
+#step1 .proj-standards .DP-img {
+    display: inline-block;
+    width: 103px;
+    height: 27px;
+    position: absolute;
+    top: 0;
+    left: 148px;
+    background: url(../images/img-main-logo-display-port.png) no-repeat;
+}
+
+#step2-MIPI{
+    display: none;
+    margin: 8px;
+}
+
+#step2-MIPI.active {
+    display: block;
+}
+
+#step2-MIPI .video-option {
+    display: flow-root;
+    border-bottom: 1px solid #0d0e0e;
+}
+
+#step2-MIPI .video-option .title{
+    display: block;
+    float: left;
+    width: 117px;
+    height: 150px;
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Noto Sans CJK KR Bold';
+}
+
+#step2-MIPI .video-option > label {
+    width: 77px;
+    margin-right: 27px;
+    margin-bottom: 10px;
+    float: left;
+    position: relative;
+}
+
+#step2-MIPI .video-option > label.HACT-wrap::before {
+   content: 'X';
+   width: 7px;
+   height: 22px;
+   color:#ddd;
+   font-size: 12px;
+   position: absolute;
+   right: -17px;
+   bottom: 2px;
+   font-family: 'Noto Sans CJK KR Medium';
+}
+
+#step2-MIPI .video-option > label.FPS-wrap {
+    margin-left: 9px;
+    margin: 0 200px 10px 9px;
+}
+
+#step2-MIPI .video-option > label.FPS-wrap::before {
+   content: '@';
+   width: 7px;
+   height: 22px;
+   color:#ddd;
+   font-size: 12px;
+   position: absolute;
+   left: -17px;
+   bottom: 2px;
+   font-family: 'Noto Sans CJK KR Medium';
+}
+
+#step2-MIPI .video-option > label:last-child {
+    margin-right: 0;
+}
+
+#step2-MIPI .video-option > label > .text {
+    display: block;
+    width: 32px;
+    height: 26px;
+    font-size: 12px;
+    color: #ddd;
+    font-family: 'Noto Sans CJK KR Medium';
+}
+
+#step2-MIPI .video-option > label > input {
+    width: 100%;
+}
+
+#step2-MIPI .MIPI-option {
+    margin-top: 26px;
+    display: flow-root;
+}
+
+#step2-MIPI .MIPI-option .title{
+    display: block;
+    float: left;
+    width: 117px;
+    height: 150px;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: 'Noto Sans CJK KR Bold';
+}
+
+#step2-MIPI .MIPI-option > label {
+    display: flow-root;
+    position: relative;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+#step2-MIPI .MIPI-option > label.mbpslane-wrap {
+    margin-right: 250px;
+}
+
+#step2-MIPI .MIPI-option > .Lane-wrap > input,
+#step2-MIPI .MIPI-option > .mbpslane-wrap > input {
+    width: 77px;
+    float: left;
+}
+
+#step2-MIPI .MIPI-option > .Lane-wrap > .text,
+#step2-MIPI .MIPI-option > .mbpslane-wrap > .text {
+    display: block;
+    float: left;
+    width: 28px;
+    height: 22px;
+    color: #ddd;
+    font-size: 12px;
+    font-family: 'Noto Sans CJK KR Medium';
+    position: relative;
+    top: 3px;
+    left: 6px;
+}
+
+#step2-MIPI .MIPI-option > label.select-video,
+#step2-MIPI .MIPI-option > label.MIPI-video {
+    width: 200px;
+    margin-right: 12px;
+}
+
+#step2-MIPI .MIPI-option > label.MIPI-video {
+    margin-right: 136px;
+}
+
+#step2-MIPI .MIPI-option .MIPI-video-mode {
+    float: left;
+}
+
+#step2-MIPI .MIPI-option .MIPI-video-mode > label{
+    float: left;
+    margin-right: 20px;
+}
+
+#step2-MIPI .MIPI-option .MIPI-video-mode > label > input {
+    float: left;
+    position: relative;
+    top: 3.5px;
+    margin-right: 8px;
+}
+
+#step2-MIPI .MIPI-option .MIPI-video-mode > label > .text {
+    float: left;
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    color: #ddd;
+    font-family: 'Noto Sans CJK KR Regular';
+}
+
+#step2-DP {
+    display: none;
+    margin: 8px;
+}
+
+#step2-DP.active {
+    display: block;
+}
+
+#step2-DP .aux-option,
+#step2-DP .video-option,
+#step2-DP .dp-option,
+#step2-DP .link-option {
+    display: flow-root;
+    border-bottom: 1px solid #0d0e0e;
+    margin-top: 24px;
+}
+
+#step2-DP .aux-option {
+    margin-top: 0;
+}
+
+#step2-DP .aux-option .title,
+#step2-DP .video-option .title,
+#step2-DP .dp-option .title,
+#step2-DP .link-option .title {
+    display: block;
+    float: left;
+    width: 117px;
+    height: 60px;
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Noto Sans CJK KR Bold';
+}
+
+#step2-DP .video-option .title {
+    height: 180px;
+}
+
+#step2-DP .aux-option > label,
+#step2-DP .video-option > label,
+#step2-DP .dp-option > label,
+#step2-DP .link-option > label {
+    width: 77px;
+    margin-right: 27px;
+    margin-bottom: 24px;
+    float: left;
+    position: relative;
+}
+
+#step2-DP .video-option > label {
+    margin-bottom: 10px;
+}
+
+#step2-DP .link-option > label {
+    margin-right: 20px;
+}
+
+#step2-DP .aux-option > label.speed-wrap {
+    margin-right: 57px;
+}
+
+#step2-DP .video-option > label.DP-FPS-wrap {
+    margin-left: 13px;
+    margin-right: 196px;
+}
+
+#step2-DP .video-option > label.DP-HSA-wrap,
+#step2-DP .dp-option > label.DP-bpc-wrap,
+#step2-DP .link-option > label.method-wrap {
+    margin-right: 0;
+}
+
+#step2-DP .video-option > label.DP-TUSIZE-wrap {
+    margin-bottom: 24px;
+}
+
+#step2-DP .dp-option > label.DP-late-wrap {
+    margin-right: 97px;
+}
+
+#step2-DP .dp-option > label.DP-color-wrap,
+#step2-DP .dp-option > label.DP-bpc-wrap {
+    width: 146px;
+}
+
+#step2-DP .link-option > label.lt-wrap,
+#step2-DP .link-option > label.sl-pat-wrap,
+#step2-DP .link-option > label.method-wrap {
+    width: 120px;
+}
+
+#step2-DP .aux-option > label.speed-wrap::before,
+#step2-DP .video-option > label.DP-HACT-wrap::before,
+#step2-DP .video-option > label.DP-FPS-wrap::before,
+#step2-DP .dp-option > label.DP-late-wrap::before {
+    content: 'Mhz';
+    width: 24px;
+    height: 22px;
+    color:#ddd;
+    font-size: 12px;
+    position: absolute;
+    right: -30px;
+    bottom: 2px;
+    font-family: 'Noto Sans CJK KR Medium';
+}
+
+#step2-DP .video-option > label.DP-HACT-wrap::before {
+    content: 'X';
+    width: 7px;
+    right: -17px;
+}
+
+#step2-DP .video-option > label.DP-FPS-wrap::before {
+    content: '@';
+    width: 12px;
+    left: -18px;
+}
+
+#step2-DP .dp-option > label.DP-late-wrap::before {
+    content: 'Mbps/Lane';
+    width: 64px;
+    right: -70px;
+}
+
+#step2-DP .aux-option > label > span,
+#step2-DP .video-option > label > span,
+#step2-DP .dp-option > label > span,
+#step2-DP .link-option > label > span {
+    display: block;
+    width: 100%;
+    height: 26px;
+    line-height: 26px;
+}
+
+#step2-DP .aux-option > label > input,
+#step2-DP .video-option > label > input,
+#step2-DP .dp-option > label > input,
+#step2-DP .link-option > label > input {
+    width: 100%;
+}
+
+#step3 {
+    display: none;
+    margin: 8px;
+}
+
+#step3.active {
+    display: block;
+}
+
+#step3 .gpio-option,
+#step3 .power-option {
+    display: flow-root;
+    border-bottom: 1px solid #0d0e0e;
+}
+
+#step3 .power-option {
+    margin-top: 24px;
+}
+
+#step3 .gpio-option .title,
+#step3 .power-option .title {
+    display: block;
+    float: left;
+    width: 117px;
+    height: 60px;
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Noto Sans CJK KR Bold';
+}
+
+#step3 .power-option .title {
+    height: 200px;
+}
+
+#step3 .gpio-option > label,
+#step3 .power-option > label {
+    margin-right: 24px;
+    margin-bottom: 12px;
+    float: left;
+    position: relative;
+}
+
+#step3 .power-option > label:nth-of-type(odd) {
+    margin-right: 8px;
+}
+
+#step3 .power-option > label:nth-of-type(even) {
+    margin-right: 40px;
+}
+
+#step3 .gpio-option > label.gpio3-wrap,
+#step3 .gpio-option > label.gpio7-wrap {
+    margin-right: 0;
+}
+
+#step3 .gpio-option > label.gpio7-wrap {
+    margin-bottom: 24px;
+}
+
+#step3 .gpio-option > label > span,
+#step3 .power-option > label > span {
+    display: block;
+    float: left;
+    width: 46px;
+    height: 22px;
+    line-height: 22px;
+    margin-right: 8px;
+}
+
+#step3 .power-option > label > span {
+    width: 49px;
+}
+
+#step3 .power-option > label:nth-of-type(even) > span {
+    width: 8px;
+    margin-left: 6px;
+}
+
+#step3 .gpio-option > label > input,
+#step3 .power-option > label > input {
+    float: left;
+    width: 77px;
+}
+
+
+/* Create Control 파트 입니다. */
+
+.popup-create-project .create-box .main .create-form .ctrl-wrap {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+}
+
+.popup-create-project .create-box .main .create-form .ctrl-wrap input[data-popup="btn-previous"] {
+    display: none;
+}
+
+.popup-create-project .create-box .main .create-form .ctrl-wrap input[data-popup="btn-previous"].active {
+    display: block;
+}
+
+/* main delete project popup 파트 입니다. */
+
+.popup-del-project {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 1000;
+}
+
+.popup-del-project.active {
+    display: block;
+}
+
+.popup-del-project .del-box {
+    width: 400px;
+    height: 194px;
+}
+
+.popup-del-project .del-box .main {
+    height: 154px;
+}
+
+.popup-del-project .del-box .area-text {
+    padding: 24px;
+}
+
+.popup-del-project .del-box .area-text .text{
+    font-size: 12px;
+    line-height: 2;
+    color: #ddd;
+    font-family: 'Noto Sans CJK KR Regular';
+}
+
+.popup-del-project .del-box .ctrl-wrap {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+}
+
+/* alert popup 파트 입니다. */
+
+.popup-alert {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 1000;
+}
+
+.popup-alert.active {
+    display: block;
+}
+
+.popup-alert .awning {
+    opacity: 0;
+}
+
+.popup-alert .alert-box {
+    width: 400px;
+    height: 170px;
+}
+
+.popup-alert .alert-box .main {
+    height: 130px;
+}
+
+.popup-alert .alert-box .main .area-text {
+    padding: 24px;
+}
+
+.popup-alert .alert-box .main .area-text .text {
+    font-size: 12px;
+    line-height: 2;
+    color: #ddd;
+    font-family: 'Noto Sans CJK KR Regular';
+}
+
+.popup-alert .alert-box .main .ctrl-wrap {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+}
+/*===========================*/
+
+/* 테스트용 css 파트 입니다. */
+.ex { 
+    position: fixed;
+    right: 50%;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    line-height: 100px;
+    vertical-align: middle;
+    display: none;
+}
+
+.ex span {
+    color: white;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+/*==========================*/

@@ -1,0 +1,130 @@
+@charset 'utf-8';
+
+#html {
+    height: 100%;
+}
+
+#body {
+    height: 100%;
+    overflow-x: clip;
+}
+
+#main {
+    height: 100%;
+}
+
+.intro-wrap {
+    background-color: #202226;
+    width: 100%;
+    height: 100%;
+}
+
+.intro-wrap .intro-box {
+    width: 1280px;
+    height: 720px;
+    padding: 0 203px;
+    margin: 0 auto;
+    background-color: #202226;
+}
+
+.intro-wrap .intro-box .main-box {
+    background: url(../images/invalid-name.png) no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    padding: 144px 187px 0;
+}
+
+.intro-wrap .intro-box .main-box .title-box .title {
+    font-size: 26px;
+    line-height: 1.46;
+    text-align: center;
+    color: #f4f4f4;
+    font-family: 'Noto Sans CJK KR Bold';
+}
+
+.intro-wrap .intro-box .main-box .title-box .sub-title {
+    margin-top: 5px;
+    font-size: 11px;
+    text-align: center;
+    color: #dbdbdb;
+    font-family: 'Noto Sans CJK KR Regular';
+}
+
+.intro-wrap .intro-box .main-box .cont-box {
+    padding: 0px 156px;
+    margin-top: 24px;
+}
+
+.intro-wrap .intro-box .main-box .loading-box {
+    padding: 0 175px;
+    margin-top: 26px;
+}
+
+.intro-wrap .intro-box .main-box .loading-box .progressbar {
+    width: 150px;
+    height: 2px;
+    border-radius: 1px;
+    position: relative;
+}
+
+.intro-wrap .intro-box .main-box .loading-box .progressbar .gaugebar {
+    display: block;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:#4686fa;
+    transition: all 1s;
+    transition-timing-function: linear;
+}
+
+.intro-wrap .intro-box .main-box .loading-box .info {
+    font-size: 10px;
+    margin-top: 8px;
+    text-align: center;
+    color: #90929d;
+    font-family: 'Noto Sans CJK KR Regular';
+}
+
+.intro-wrap .intro-box .main-box .footer-box {
+    padding: 0 49px;
+    margin-top: 140px;
+    text-align: center;
+}
+
+.intro-wrap .intro-box .main-box .footer-box > img {
+    width: 49px;
+    height: 15px;
+}
+
+.intro-wrap .intro-box .main-box .footer-box > .info {
+    font-size: 9px;
+    margin-top: 10px;
+    color: #848484;
+    text-align: center;
+    font-family: 'Noto Sans CJK KR Regular';
+}
+
+.intro-admin-box {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #2f3237;
+    border: 2px solid black;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.intro-admin-box button {
+    padding: 5px 10px;
+    color: #97d26d;
+    background-color: black;
+    font-family: 'Noto Sans CJK KR Bold';
+}
